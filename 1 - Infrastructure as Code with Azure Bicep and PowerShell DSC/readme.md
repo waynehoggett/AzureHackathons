@@ -14,4 +14,4 @@ But today, let’s get started with Infrastructure as Code and Configuration Man
 
 ## Before you begin
 
-Check out the detailed setup guide [here](./setup/readme.md)
+Check out the detailed setup guide [here](setup/readme.md)
