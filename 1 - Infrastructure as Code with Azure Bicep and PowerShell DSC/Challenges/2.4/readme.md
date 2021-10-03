@@ -1,0 +1,1 @@
+# Challenge 2.4 - Apply your configuration to your Windows VMs

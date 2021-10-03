@@ -1,0 +1,1 @@
+# Challenge 1.6 - Configure Security

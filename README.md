@@ -8,6 +8,6 @@ A collection of student resources related to Azure Hackathons.
 
 The following hacks are available:
 
-### 1 - Infrastructure as Code with Azure Bicep and PowerShell DSC
+### 1 - Azure Infrastructure as Code
 
 In this hackathon, you will deploy some Azure resources using Bicep and configure some virtual machine settings using PowerShell DSC.

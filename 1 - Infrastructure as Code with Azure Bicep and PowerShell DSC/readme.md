@@ -1,4 +1,4 @@
-# 1 - Infrastructure as Code with Azure Bicep and PowerShell DSC
+# 1 - Azure Infrastructure as Code
 
 ## Introduction
 
@@ -20,19 +20,50 @@ Check out the detailed setup guide [here](Setup/readme.md).
 
 The challenges in this hack are broken up into two sections. The first section focuses on Infrastructure as Code (IaC) using Azure Bicep. The second section focuses on Configuration Management with DSC.
 
-### Section 01 - Infrastructure as Code with Azure Bicep
+### Round 1 - Infrastructure as Code with Azure Bicep
 
-* #### Challenge 1.1 - Deploy your first Bicep Template
-* #### Challenge 1.2 - Deploy a Virtual Network
-* #### Challenge 1.3 - Deploy Azure KeyVault and store secrets
-* #### Challenge 1.4 - Deploy a Windows Virtual Machine
-* #### Challenge 1.5 - Deploy Highly Available Virutal Machines
-* #### Challenge 1.6 - Configure Security
+* [**Challenge 1.1 - Deploy your first Bicep Template**](Challenges/1.1/readme.md)
 
-### Section 02 - Configuration Management with PowerShell DSC
+    Write your first bicep template and deploy it
 
-* #### Challenge 2.1 - Use a Custom Script Extension
-* #### Challenge 2.2 - Deploy an Automation Account
-* #### Challenge 2.3 - Deploy your first configuration
-* #### Challenge 2.4 - Apply your configuration to your Windows VMs
-* #### Challenge 2.5 - Update your configuration
+* [**Challenge 1.2 - Deploy a Virtual Network**](Challenges/1.2/readme.md)
+    
+    Deploy a Virtual Network
+
+* [**Challenge 1.3 - Deploy Azure Key Vault**](Challenges/1.3/readme.md)
+    
+    Deploy a Key Vault and store some secrets
+
+* [**Challenge 1.4 - Deploy a Windows Virtual Machine**](Challenges/1.4/readme.md)
+    
+    Deploy a Windows Virtual Machine
+
+* [**Challenge 1.5 - Deploy Highly Available Virtual Machines**](Challenges/1.5/readme.md)
+
+    Deploy two highly-available Virtual Machines
+
+* [**Challenge 1.6 - Configure Security**](Challenges/1.6/readme.md)
+   
+    Enhance the security of your infrastructure
+
+### Round 2 - Configuration Management with PowerShell DSC
+
+* [**Challenge 2.1 - Use a Custom Script Extension**](Challenges/2.1/readme.md)
+
+    Apply basic configuration with the custom script extension
+
+* [**Challenge 2.2 - Deploy an Automation Account**](Challenges/2.2/readme.md)
+
+    Deploy an Azure Automation Account
+
+* [**Challenge 2.3 - Deploy your first configuration**](Challenges/2.3/readme.md)
+
+    Author and deploy your first configuration
+
+* [**Challenge 2.4 - Apply your configuration to your Windows VMs**](Challenges/2.4/readme.md)
+
+    Apply your first to your virtual machines
+
+* [**Challenge 2.5 - Update your configuration**](Challenges/2.4/readme.md)
+
+    Update your configuration by adding some new features

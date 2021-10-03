@@ -1,0 +1,1 @@
+# Challenge 1.5 - Deploy Highly Available Virtual Machines
