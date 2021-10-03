@@ -20,19 +20,25 @@ Your second challenge is to deploy a virtual network using a bicep template, onc
  * Subnets:
     * 1 subnet with the address space: `10.0.0.0/24`
 
-You can use any *valid* name you like for the vnet and subnets. The virtual network must be deployed to the `east us` region.
+    You can use any *valid* name you like for the vnet and subnets. The virtual network must be deployed to the `east us` region.
 
     <details>
-    <summary>Tips and Tricks</summary>
-     * Can Visual Studio Code make your job easier?
-     * Where can you find ARM documentation?
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+        <li>Can Visual Studio Code make your job easier again?</li>
+        <li>Where can you find ARM documentation?</li>
+        <li>What are quick start templates?</li>
+    </ul>
     </details>
 
 1. Update the template to include an additional subnet with the address range of `10.0.1.0/24` and deploy it to update the virtual network
+
     <details>
-    <summary>Tips and Tricks</summary>
-     * What is idempotency?
-     * What do you think would happen if you changed the name of the vnet?
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+        <li>What is idempotency?</li>
+        <li>What do you think would happen if you changed the name of the vnet?</li>
+    </ul>
     </details>
 
 ## Success Criteria

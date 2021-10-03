@@ -17,15 +17,20 @@ Your first challenge is to deploy a bicep template, once you have finished this 
 1. Author a bicep template that takes a `yourName`  parameter and outputs that name with a friendly welcome message
 
     <details>
-    <summary>Tips and Tricks</summary>
-     * Can Visual Studio Code make your job easier?
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+        <li> Can Visual Studio Code make your job easier?</li>
+        <li> Where are you going to deploy your template to?</li>
+    </ul>
     </details>
 
 1. Deploy the template with either the Azure CLI or Azure PowerShell
     <details>
-    <summary>Tips and Tricks</summary>
-     * What is string interpolation?
-     * Where are you going to deploy your template to?
+    <summary> 💡 Tips and Tricks</summary>
+    <ul>
+        <li> What is string interpolation?</li>
+        <li> Where are you going to deploy your template to?</li>
+    </ul>
     </details>
 
 ## Success Criteria
