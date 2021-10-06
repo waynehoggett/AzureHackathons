@@ -8,7 +8,7 @@
 
 ## Overview
 
-Your first challenge is to deploy a bicep template, once you have finished this challenge it's expected you will have an understanding of:
+Your first challenge is to deploy a bicep template, once you have finished this challenge you will have an understanding of:
 * How to author a basic bicep template
 * How to deploy that template
 

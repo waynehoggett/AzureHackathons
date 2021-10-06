@@ -8,7 +8,7 @@
 
 ## Overview
 
-Your second challenge is to deploy a virtual network using a bicep template, once you have finished this challenge it's expected you will have an understanding of:
+Your second challenge is to deploy a virtual network using a bicep template, once you have finished this challenge you will have an understanding of:
 * How to find Azure Resource Manager documentation
 * How to look for examples of templates
 * How to deploy a virtual network
@@ -16,9 +16,9 @@ Your second challenge is to deploy a virtual network using a bicep template, onc
 ## Objectives
 
 1. Author a bicep template and use it to deploy a virtual network with the following properties:
- * Address space: `10.0.0.0/16`
- * Subnets:
-    * 1 subnet with the address space: `10.0.0.0/24`
+    * Address space: `10.0.0.0/16`
+    * Subnets:
+        * 1 subnet with the address space: `10.0.0.0/24`
 
     You can use any *valid* name you like for the vnet and subnets. The virtual network must be deployed to the `east us` region.
 
