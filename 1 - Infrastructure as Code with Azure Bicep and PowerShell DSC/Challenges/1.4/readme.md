@@ -32,7 +32,7 @@ Once you have finished this challenge you will have an understanding of:
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>How can you reference a Key Vault secret in a Bicep template?</li>
+        <li>How can you reference a Key Vault secret in a Bicep template? [Hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter?tabs=azure-cli#reference-secrets-in-parameter-file)</li>
         <li>Some VM SKUs will be blocked by corporate policy, you need to select a valid SKU</li>
     </ul>
     </details>
@@ -45,4 +45,4 @@ You will have:
  - No secrets are stored in plain text
  - All resources must be deployed to the `east us` region
 
-[< Previous Challenge](../1.2/readme.md) | [Next Challenge >](../1.4/readme.md)
+[< Previous Challenge](../1.3/readme.md) | [Next Challenge >](../1.5/readme.md)

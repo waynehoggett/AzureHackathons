@@ -19,7 +19,9 @@ Once you have finished this challenge you will have an understanding of:
 
 ## Objectives
 
-1. Update your existing bicep template/s to deploy a custom script extension that installs IIS.
+1. Update your existing bicep template/s to deploy a custom script extension that installs IIS on the Virtual Machines you have deployed.
+
+    You can use the script located here: [Install-IIS.ps1](Install-IIS.ps1)
 
     You should verify this has been completed by trying to access the web servers.
 
@@ -37,4 +39,4 @@ You will have:
  - No secrets are stored in plain text
  - All resources must be deployed to the `east us` region
 
-[< Previous Challenge](../1.5/readme.md) | [Next Round >](../2.1/readme.md)
+[< Previous Challenge](../1.6/readme.md) | [Next Round >](../2.2/readme.md)
