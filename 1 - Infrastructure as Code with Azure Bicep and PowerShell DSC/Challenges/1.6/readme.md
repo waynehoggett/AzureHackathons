@@ -24,13 +24,13 @@ Once you have finished this challenge you will have an understanding of:
 1. Author a bicep template to provide secure remote access to the virtual machines for administrative purposes and provide public access to the web server that will be running on the virtual machines. You can deploy additional resources to assist you in securing your servers.
 
     You should test logging on to your virtual machines as part of this challenge.
-    You will not be able to test the website yet, as you haven't configured it yet, that will come in round 2.
+    You will not be able to test the website yet, as you haven't configured it yet, that will come in Round 2.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>What is Azure Bastion?</li>
         <li>What is an Azure Public IP Address?</li>
+        <li>What is Azure Bastion?</li>
         <li>What is a Network Security Group?</li>
         <li>What is an Application Gateway?</li>
         <li>Can Visual Studio Code make it easier?</li>

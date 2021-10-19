@@ -21,7 +21,7 @@ Once you have finished this challenge you will have an understanding of:
 
 1. Compose your configuration to meet the following requirements:
      * Install IIS
-     * Download and Install the following Web App: #TODO
+     * Download and unzip the following Web App to the IIS Default Site Directory: [SampleWebApp.zip](SampleWebApp.zip)
 
     <details>
     <summary>💡 Tips and Tricks</summary>
