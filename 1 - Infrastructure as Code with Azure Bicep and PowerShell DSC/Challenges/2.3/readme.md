@@ -33,7 +33,7 @@ Once you have finished this challenge you will have an understanding of:
     </ul>
     </details>
 
-1. Use Azure PowerShell or the Azure CLI to submit your configuration to the automation account for compilation
+1. Use Azure PowerShell to submit your configuration to the automation account for compilation
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -43,7 +43,7 @@ Once you have finished this challenge you will have an understanding of:
     </ul>
     </details>
 
-1. Use Azure PowerShell or the Azure CLI to start a compilation job for your configuration
+1. Use Azure PowerShell to start a compilation job for your configuration
 
 <details>
 <summary>💡 Tips and Tricks</summary>
@@ -55,8 +55,7 @@ Once you have finished this challenge you will have an understanding of:
 ## Success Criteria
 
 You will have:
- - An Azure Key Vault deployed
- - A secret added that can be used as an administrator password on virtual machines
+ - A compiled configuration for each node (one per VM)
  - No secrets are stored in plain text
  - All resources must be deployed to the `east us` region
 
