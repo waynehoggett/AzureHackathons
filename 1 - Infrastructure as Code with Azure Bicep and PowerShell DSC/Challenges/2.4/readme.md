@@ -25,9 +25,8 @@ Once you have finished this challenge you will have an understanding of:
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>You can do this with PowerShell/CLI or with bicep - which will you choose?</li>
-        <li>Which configuration mode will you choose?</li>
-        <li>How often will you configure your servers to update and apply their configuration</li>
+        <li>You can do this with PowerShell/CLI or with Bicep - which will you choose?</li>
+        <li>You can read all about the DSC VM extension [here](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-template)</li>
     </ul>
     </details>
 
@@ -36,7 +35,9 @@ Once you have finished this challenge you will have an understanding of:
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>Which cmdlets can you run on your VMs to manually pull a new configuration or start applying the configuration?</li>
+        <li>Which cmdlets can you run on your VMs to manually pull a new configuration or start applying the configuration (See below)?</li>
+        <li>[Update-DscConfiguration](https://docs.microsoft.com/en-us/powershell/module/psdesiredstateconfiguration/update-dscconfiguration?view=powershell-5.1) checks and *pulls* a new configuration if it exists</li>
+        <li>[Start-DscConfiguration](https://docs.microsoft.com/en-us/powershell/module/psdesiredstateconfiguration/start-dscconfiguration?view=powershell-5.1) applies an existing configuration that has been *pulled*</li>
         <li>Where in the Azure Portal can you view configuration compliance?</li>
     </ul>
     </details>
@@ -46,5 +47,6 @@ Once you have finished this challenge you will have an understanding of:
 You will have:
  - Two nodes (VMs) configured to pull their configuration from the automation account
  - Both VMs have successfully applied the configuration
+ - All configuration and infrastructure 'as code'
 
 [< Previous Challenge](../2.3/readme.md) | [Next Challenge >](../2.5/readme.md)

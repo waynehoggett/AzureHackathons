@@ -68,6 +68,6 @@ In round two, you'll take on a series of Configuration as Code (CaC) challenges.
 
     Apply your first to your virtual machines
 
-* [**Challenge 2.5 - Update your configuration**](Challenges/2.4/readme.md)
+* [**Challenge 2.5 - Configure the Local Configuration Manager (LCM)**](Challenges/2.4/readme.md)
 
-    Update your configuration by adding some new features
+    Configure the Local Configuration Manager (LCM)
