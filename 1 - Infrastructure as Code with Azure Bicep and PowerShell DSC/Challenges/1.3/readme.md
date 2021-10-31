@@ -30,9 +30,8 @@ Once you have finished this challenge you will have an understanding of:
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li>Can you add the vault resource to your existing template? When might you use a separate template?</li>
-        <li>How can you automatically generate random/unique names in bicep?</li>
-        <li>What is the uniqueString() function?</li>
-        <li>What is the substring() function?</li>
+        <li>How can you automatically generate random/unique names in bicep? See the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string#uniquestring" target="_blank">uniqueString()</a> function?</li>
+        <li>What is the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string#substring" target="_blank">substring()</a> function?</li>
     </ul>
     </details>
 
@@ -42,7 +41,7 @@ Once you have finished this challenge you will have an understanding of:
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li>Do you have access to add secrets?</li>
-        <li>What is the difference between the `Key Vault Contributor` role and the `Key Vault Secrets Officer` role?</li>
+        <li>What is the difference between the <code>Key Vault Contributor</code> role and the <code>Key Vault Secrets Officer</code> role?</li>
         <li>How would you choose to grant access to the vault?</li>
         <li>What is the principal of least privilege?</li>
         <li>Why do you think are we adding the secret using PowerShell or CLI, and not bicep?</li>

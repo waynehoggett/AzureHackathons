@@ -19,8 +19,9 @@ Your first challenge is to deploy a bicep template, once you have finished this 
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li> Can Visual Studio Code make your job easier?</li>
-        <li> Where are you going to deploy your template to?</li>
+        <li> Can Visual Studio Code make your job easier? Type <code>res-</code> in a <code>.bicep</code> file to see</li>
+        <li>What is string interpolation? More info <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-prefer-interpolation" target="_blank">here</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-declaration?tabs=azure-powershell" target="_blank">Resource Declaration in Bicep</a></li>
     </ul>
     </details>
 
@@ -28,8 +29,9 @@ Your first challenge is to deploy a bicep template, once you have finished this 
     <details>
     <summary> 💡 Tips and Tricks</summary>
     <ul>
-        <li> What is string interpolation?</li>
-        <li> Where are you going to deploy your template to?</li>
+        <li>Where are you going to deploy your template to? Resources in Azure are deployed to Resource Groups (some can be deployed to subscriptions and management groups), you will need to create a Resource Group</li>
+        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-powershell?view=azps-6.5.0#deploy-local-template" target="_blank">Powershell</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli?toc=%2Fcli%2Fazure%2Ftoc.json&bc=%2Fcli%2Fazure%2Fbreadcrumb%2Ftoc.json#deploy-local-template" target="_blank">CLI</a></li>
     </ul>
     </details>
 

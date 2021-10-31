@@ -26,8 +26,8 @@ Your second challenge is to deploy a virtual network using a bicep template, onc
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li>Can Visual Studio Code make your job easier again?</li>
-        <li>Where can you find ARM documentation?</li>
-        <li>What are quick start templates?</li>
+        <li>Where can you find <a href="https://docs.microsoft.com/en-us/azure/templates/microsoft.network/virtualnetworks?tabs=bicep" target="_blank">ARM documentation</a>?</li>
+        <li>What are <a href="https://azure.microsoft.com/en-us/resources/templates/?sort=DateUpdated" target="_blank">quick start templates</a>?</li>
     </ul>
     </details>
 
@@ -36,7 +36,7 @@ Your second challenge is to deploy a virtual network using a bicep template, onc
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>What is idempotency?</li>
+        <li>What is <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview#why-choose-arm-templates#:~:text=idempotent" target="_blank">idempotency</a>?</li>
         <li>What do you think would happen if you changed the name of the vnet?</li>
     </ul>
     </details>
