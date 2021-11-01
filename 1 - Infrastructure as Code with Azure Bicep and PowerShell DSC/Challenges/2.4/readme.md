@@ -36,8 +36,8 @@ Once you have finished this challenge you will have an understanding of:
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li>Which cmdlets can you run on your VMs to manually pull a new configuration or start applying the configuration (See below)?</li>
-        <li>[Update-DscConfiguration](https://docs.microsoft.com/en-us/powershell/module/psdesiredstateconfiguration/update-dscconfiguration?view=powershell-5.1) checks and *pulls* a new configuration if it exists</li>
-        <li>[Start-DscConfiguration](https://docs.microsoft.com/en-us/powershell/module/psdesiredstateconfiguration/start-dscconfiguration?view=powershell-5.1) applies an existing configuration that has been *pulled*</li>
+        <li><a href="https://docs.microsoft.com/en-us/powershell/module/psdesiredstateconfiguration/update-dscconfiguration?view=powershell-5.1">Update-DscConfiguration</a> checks and *pulls* a new configuration if it exists</li>
+        <li><a href="https://docs.microsoft.com/en-us/powershell/module/psdesiredstateconfiguration/start-dscconfiguration?view=powershell-5.1">Start-DscConfiguration</a> applies an existing configuration that has been *pulled*</li>
         <li>Where in the Azure Portal can you view configuration compliance?</li>
     </ul>
     </details>
