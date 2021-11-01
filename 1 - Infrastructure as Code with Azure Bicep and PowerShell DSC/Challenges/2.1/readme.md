@@ -28,7 +28,8 @@ Once you have finished this challenge you will have an understanding of:
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>Can Visual Studio Code make it easier?</li>
+        <li>Can Visual Studio Code make it easier? with <code>res-vm-script-windows</code></li>
+        <li>The <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/child-resource-name-type#outside-parent-resource">parent</a> property in bicep might be handy here</li>
     </ul>
     </details>
 

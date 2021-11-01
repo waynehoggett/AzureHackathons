@@ -32,9 +32,9 @@ Once you have finished this challenge you will have an understanding of:
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li>What is the difference between an Availability Set and an Availability Zone?</li>
-        <li>Does the type of disk you choose have any impact on the Microsoft LA?</li>
+        <li>Does the type of disk you choose have any impact on the Microsoft SLA?</li>
         <li>What is a bicep module?</li>
-        <li>If you use a module - you're likely going to want to know about [getSecret()](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter?tabs=azure-cli#use-getsecret-function)</li>
+        <li>If you use a module - you're likely going to want to know about the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter?tabs=azure-cli#use-getsecret-function">getSecret()</a> function</li>
     </ul>
     </details>
 

@@ -36,7 +36,7 @@ Once you have finished this challenge you will have an understanding of:
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>The `Microsoft.Automation/automationAccounts/modules` resource can help here</li>
+        <li>The <code>Microsoft.Automation/automationAccounts/modules</code> resource can help here</li>
     </ul>
     </details>
 

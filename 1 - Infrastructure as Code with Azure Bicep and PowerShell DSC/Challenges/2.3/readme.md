@@ -26,10 +26,10 @@ Once you have finished this challenge you will have an understanding of:
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>Can VSCode make your job easier?</li>
+        <li>Can VSCode make your job easier? <code>ex-DSC config</code></li>
         <li>Should you configure more than one *node* in your configuration</li>
-        <li>Which DSC resource can be used to download a remote file?</li>
-        <li>Which DSC resource can be used to unzip an archive?</li>
+        <li>Which DSC resource can be used to download a remote file? <a href="https://github.com/dsccommunity/xPSDesiredStateConfiguration/blob/main/source/Examples/Resources/xRemoteFile/1-xRemoteFile_DownloadFile_Config.ps1">xRemoteFile</a> will help</li>
+        <li>Which DSC resource can be used to unzip an archive? <a href="https://github.com/dsccommunity/xPSDesiredStateConfiguration/blob/main/source/Examples/Resources/xArchive/1-xArchive_ExpandArchiveChecksumAndForce_Config.ps1">xArchive</a></li>
     </ul>
     </details>
 

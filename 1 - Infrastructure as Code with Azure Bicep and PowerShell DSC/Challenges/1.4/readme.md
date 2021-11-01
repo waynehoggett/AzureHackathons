@@ -32,8 +32,8 @@ Once you have finished this challenge you will have an understanding of:
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>How can you reference a Key Vault secret in a Bicep template? [Hint](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter?tabs=azure-cli#reference-secrets-in-parameter-file)</li>
-        <li>Some VM SKUs will be blocked by corporate policy, you need to select a valid SKU</li>
+        <li>How can you reference a Key Vault secret in a Bicep template? <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter?tabs=azure-cli#reference-secrets-in-parameter-file">Here are some more details</a></li>
+        <li>Some VM SKUs will be blocked by corporate policy, you need to select a valid SKU, A or B Series only!</li>
     </ul>
     </details>
 

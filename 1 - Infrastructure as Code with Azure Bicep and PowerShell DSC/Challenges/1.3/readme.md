@@ -30,12 +30,12 @@ Once you have finished this challenge you will have an understanding of:
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li>Can you add the vault resource to your existing template? When might you use a separate template?</li>
-        <li>How can you automatically generate random/unique names in bicep? See the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string#uniquestring" target="_blank">uniqueString()</a> function?</li>
+        <li>How can you automatically generate random/unique names in bicep? See the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string#uniquestring" target="_blank">uniqueString()</a> function</li>
         <li>What is the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string#substring" target="_blank">substring()</a> function?</li>
     </ul>
     </details>
 
-1. Use Azure PowerShell or the Azure CLI to add a secure password to the vault (We'll use this password later)
+1. Use Azure PowerShell or the Azure CLI to add a secure password to the vault (We'll use this password later as the administrator password on our virtual machines)
 
     <details>
     <summary>💡 Tips and Tricks</summary>
