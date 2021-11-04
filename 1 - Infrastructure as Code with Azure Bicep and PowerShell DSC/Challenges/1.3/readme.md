@@ -23,8 +23,9 @@ Once you have finished this challenge you will have an understanding of:
 1. Author a bicep template and use it to deploy an Azure Key Vault. The vault must have the following properties:
     * It must be enabled for deployment, template deployment and enabled for disk encryption
     * It must also use Azure RBAC for permission assignment
-
-    You can use any *valid* name you like for the vault. The vault must be deployed to the `east us` region.
+    * You can use any *valid* name you like for the vault
+    * The vault must be deployed to the `east us` region
+    * Use the Tenant ID: `f6c2603d-ddfd-4daf-bed1-7f551055566e`
 
     <details>
     <summary>💡 Tips and Tricks</summary>

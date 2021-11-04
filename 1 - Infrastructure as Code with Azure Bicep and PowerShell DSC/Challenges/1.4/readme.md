@@ -24,7 +24,7 @@ Once you have finished this challenge you will have an understanding of:
     * Use a stored Key Vault secret for the administrator account password
     * Use `Windows Server 2016`
     * Be deployed to the `east us` region
-    * Be a `B series` or `A series`
+    * Be a `B series` or `A series` (Use either Standard_A2_v2 or Standard_B2s)
 
     You can use any *valid* name you like for the VM.
     You **do not** need to log on to the VM as part of this challenge.
