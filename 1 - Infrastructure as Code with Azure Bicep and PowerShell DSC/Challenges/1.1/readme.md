@@ -21,7 +21,7 @@ Your first challenge is to deploy a bicep template, once you have finished this 
     <ul>
         <li>Create a <code>main.bicep</code> file and add the required parameter and output code</li>
         <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters">Parameter declaration in Bicep</a></li>
-        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/outputs?tabs=azure-powershell">Outputs in Bicep</li>
+        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/outputs?tabs=azure-powershell">Outputs in Bicep</a></li>
         <li>What is string interpolation? More info <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-prefer-interpolation" target="_blank">here</a></li>
     </ul>
     </details>
