@@ -19,9 +19,10 @@ Your first challenge is to deploy a bicep template, once you have finished this 
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li> Can Visual Studio Code make your job easier? Type <code>res-</code> in a <code>.bicep</code> file to see</li>
+        <li>Create a <code>main.bicep</code> file and add the required parameter and output code</li>
+        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters">Parameter declaration in Bicep</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/outputs?tabs=azure-powershell">Outputs in Bicep</a></li>
         <li>What is string interpolation? More info <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-prefer-interpolation" target="_blank">here</a></li>
-        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-declaration?tabs=azure-powershell" target="_blank">Resource Declaration in Bicep</a></li>
     </ul>
     </details>
 

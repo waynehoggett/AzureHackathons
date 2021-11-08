@@ -25,7 +25,8 @@ Your second challenge is to deploy a virtual network using a bicep template, onc
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>Can Visual Studio Code make your job easier again?</li>
+        <li>Can Visual Studio Code make your job easier again? Type <code>res-</code> in a <code>.bicep</code> file to see</li>
+        <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-declaration?tabs=azure-powershell" target="_blank">Resource Declaration in Bicep</a></li>
         <li>Where can you find <a href="https://docs.microsoft.com/en-us/azure/templates/microsoft.network/virtualnetworks?tabs=bicep" target="_blank">ARM documentation</a>?</li>
         <li>What are <a href="https://azure.microsoft.com/en-us/resources/templates/?sort=DateUpdated" target="_blank">quick start templates</a>?</li>
     </ul>
