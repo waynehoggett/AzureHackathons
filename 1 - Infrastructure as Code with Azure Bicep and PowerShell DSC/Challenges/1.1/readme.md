@@ -29,7 +29,7 @@ Your first challenge is to deploy a bicep template, once you have finished this 
     <details>
     <summary> 💡 Tips and Tricks</summary>
     <ul>
-        <li>Where are you going to deploy your template to? Resources in Azure are deployed to Resource Groups (some can be deployed to subscriptions and management groups), you will need to create a Resource Group</li>
+        <li>Where are you going to deploy your template to? Resources in Azure are deployed to Resource Groups (some can be deployed to subscriptions and management groups), you will need to create a Resource Group, deploy it to the <code>east us</code> region</li>
         <li>Deploy using <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-powershell?view=azps-6.5.0#deploy-local-template" target="_blank">Azure Powershell</a></li>
         <li>Deploy using the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli?toc=%2Fcli%2Fazure%2Ftoc.json&bc=%2Fcli%2Fazure%2Fbreadcrumb%2Ftoc.json#deploy-local-template" target="_blank">Azure CLI</a></li>
     </ul>
