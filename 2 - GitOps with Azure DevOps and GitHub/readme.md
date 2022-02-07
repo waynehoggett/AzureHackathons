@@ -19,10 +19,10 @@ The challenges in this hack are broken into two tracks. There is an Azure DevOps
 
 ## Tracks
 
-* [Azure DevOps](###azure-devOps)
+* [Azure DevOps](###azure-devops)
 * [GitHub](###gitHub)
 
-(### Azure DevOps)
+### Azure DevOps
 
 * [**Challenge 1.1 - Repository Setup**](Challenges/Azure/1.1/readme.md)
 
@@ -42,7 +42,7 @@ The challenges in this hack are broken into two tracks. There is an Azure DevOps
 
 * [**Challenge 1.9 - Branching Strategies**](Challenges/Azure/1.9/readme.md)
 
-(### GitHub)
+### GitHub
 
 * [**Challenge 1.1 - Repository Setup**](Challenges/GitHub/1.1/readme.md)
 
