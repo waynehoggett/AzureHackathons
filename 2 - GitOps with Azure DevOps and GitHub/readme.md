@@ -19,8 +19,8 @@ The challenges in this hack are broken into two tracks. There is an Azure DevOps
 
 ## Tracks
 
-* [Azure DevOps](###azure-devops)
-* [GitHub](###gitHub)
+* [Azure DevOps](#azure-devops)
+* [GitHub](#github)
 
 ### Azure DevOps
 
