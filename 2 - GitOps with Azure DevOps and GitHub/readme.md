@@ -15,7 +15,7 @@ Check out the detailed setup guide [here](Setup/readme.md).
 
 ## Challenges
 
-The challenges in this hack are broken into two tracks. There is an Azure DevOps track and a GitHub track. Both achieve the same goal, but in their own unique way. Choose one track to work with, your team will all be working ont he same track.
+The challenges in this hack are broken into two tracks. There is an Azure DevOps track and a GitHub track. Both achieve the same goal, but in their own unique way. Choose one track to work with, your team will all be working on the same track.
 
 ## Tracks
 
