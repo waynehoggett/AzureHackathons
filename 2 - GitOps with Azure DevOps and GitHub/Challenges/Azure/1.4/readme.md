@@ -3,17 +3,18 @@
 ## Before you begin
 
 * Check out the detailed setup guide [here](/Setup/readme.md)
-* Every challenge is dependant on the previous challenges, make sure you work through them in order
+* Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
 
 ## Overview
 
-Your <TODO> challenge is to <TODO>, once you have finished this challenge you will have an understanding of:
-* 
+Your challenge is to merge your changes into the main (production) branch. Once you have finished this challenge you will have an understanding of:
+* Pull requests
+* Code review
 
 ## Objectives
 
-1. Author a bicep template that takes a `yourName`  parameter and outputs that name with a friendly welcome message
+1. Navigate to the 
 
     <details>
     <summary>💡 Tips and Tricks</summary>

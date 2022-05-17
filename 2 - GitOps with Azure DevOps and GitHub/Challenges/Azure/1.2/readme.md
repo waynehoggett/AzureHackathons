@@ -3,7 +3,7 @@
 ## Before you begin
 
 * Check out the detailed setup guide [here](/Setup/readme.md)
-* Every challenge is dependant on the previous challenges, make sure you work through them in order
+* Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
 
 ## Overview
@@ -22,7 +22,7 @@ Your second challenge is to create and configure your branches, once you have fi
 
 ## Objectives
 
-1. Configure the `main` branch to require at least one reviewer
+1. Configure the `main` branch to require at least two reviewers and allow requestors to approve their own changes
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -38,8 +38,8 @@ Your second challenge is to create and configure your branches, once you have fi
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li><a target="_blank" href="https://docs.microsoft.com/en-us/azure/devops/repos/git/create-branch?view=azure-devops&tabs=browser">Create a new Git branch</a></li>
-    </ul>
         <li>We're using a naming convention for our feature branches. The naming convention can be anything you like, but it's quite common to include the branch type, what the work is and who is working on it.</li>
+    </ul>
     </details>
     <br/>
 

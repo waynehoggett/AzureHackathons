@@ -3,7 +3,7 @@
 ## Before you begin
 
 * Check out the detailed setup guide [here](/Setup/readme.md)
-* Every challenge is dependant on the previous challenges, make sure you work through them in order
+* Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
 
 ## Overview

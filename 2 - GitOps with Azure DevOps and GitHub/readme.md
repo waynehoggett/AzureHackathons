@@ -40,8 +40,6 @@ The challenges in this hack are broken into two tracks. There is an Azure DevOps
 
 * [**Challenge 1.8 - Rollback**](Challenges/Azure/1.8/readme.md)
 
-* [**Challenge 1.9 - Branching Strategies**](Challenges/Azure/1.9/readme.md)
-
 ### GitHub
 
 * [**Challenge 1.1 - Repository Setup**](Challenges/GitHub/1.1/readme.md)
@@ -59,5 +57,3 @@ The challenges in this hack are broken into two tracks. There is an Azure DevOps
 * [**Challenge 1.7 - Tags**](Challenges/GitHub/1.7/readme.md)
 
 * [**Challenge 1.8 - Rollback**](Challenges/GitHub/1.8/readme.md)
-
-* [**Challenge 1.9 - Branching Strategies**](Challenges/GitHub/1.9/readme.md)
