@@ -1,10 +1,12 @@
 # Challenge 1.1 - Repository Setup
 
-## Before you begin
+<details>
+<summary>🧰 Before you begin</summary>
 
 * Check out the detailed setup guide [here](/Setup/readme.md)
 * Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
+</details>
 
 ## Overview
 
@@ -37,7 +39,7 @@ Your first challenge is to setup a repository and setup access for your team mem
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-    <li>Navigate to ⚙️ Project Settings ➡️ Overview and scroll down to **Azure DevOps Services**</li>
+    <li>Navigate to ⚙️ Project Settings ➡️ Overview and scroll down to <b>Azure DevOps Services</b></li>
     </ul>
     </details>
     <br>

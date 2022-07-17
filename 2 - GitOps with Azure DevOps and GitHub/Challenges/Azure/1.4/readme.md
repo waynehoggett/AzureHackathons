@@ -1,10 +1,12 @@
 # Challenge 1.4 - Code Collaboration
 
-## Before you begin
+<details>
+<summary>🧰 Before you begin</summary>
 
 * Check out the detailed setup guide [here](/Setup/readme.md)
 * Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
+</details>
 
 ## Overview
 
@@ -14,13 +16,12 @@ Your challenge is to merge your changes into the main (production) branch. Once 
 
 ## Objectives
 
-1. Navigate to the 
+1. Create a **Pull Request** to merge the changes you made in your feature branch into the main (production) branch.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
-    <ul>
-        <li></li>
-    </ul>
+
+     * <a href="https://docs.microsoft.com/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser#create-a-pull-request">Create a Pull Request</a> documentation
     </details>
 
 
