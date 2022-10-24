@@ -47,7 +47,7 @@ Your challenge is to create a local copy of your feature branch, update the read
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li>You can stage all of your files with <code>git add .</code> or stage individual files with <code>git add &lt;filename&gt;</code></li>
-        <li>If you skip this step, VS Code will ask you if you want to stage your changes when you run <code>git commit</code>. So you might not end up running git add too often in the real world, but it's an important step to know, because you need to <b>stage</b> your changes before you can commit them
+        <li>If you skip this step, VS Code will ask you if you want to stage your changes when you run <code>git commit</code>. So you might not end up running git add too often in the real world, but it's an important step to know, because you need to <b>stage</b> your changes before you can commit them.
         </li>
     </ul>
     </details>
@@ -58,7 +58,7 @@ Your challenge is to create a local copy of your feature branch, update the read
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-        <li>You can stage all of your files with <code>git add .</code> or stage individual files with <code>git add &lt;filename&gt;</code></li>
+        <li>You can type <code>git commit -m "message"</code> in the terminal or use <code>git commit</code> in the command palette.</li>
     </ul>
     </details>
     <br>
@@ -67,6 +67,6 @@ Your challenge is to create a local copy of your feature branch, update the read
 
 ## Success Criteria
 
-You will have an updated readme file in the remote branch.
+You will have an updated readme file in your remote feature branch.
 
 [< Previous Challenge](../1.2/readme.md) | [Next Challenge >](../1.4/readme.md)

@@ -1,0 +1,95 @@
+# Challenge 1.7 - Branching and Policies
+
+## Before you begin
+
+* Check out the detailed setup guide [here](/Setup/readme.md)
+* Every challenge is dependent on the previous challenges, make sure you work through them in order
+* Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
+
+## Overview
+
+In the previous steps, we successfully implemented an end-to-end CI/CD pipeline! However, our current workflow will immediately promote every small change directly to production. Typically, you would want to avoid working directly against the main branch in your repository to avoid conflicts and protect the production environment. 
+
+With GitHub, we can solve these challenges using a practice called branching. Some may refer to this as the [GitHub flow](https://guides.github.com/introduction/flow/). When a developer wants to make a change, add a feature, or fix a bug, he or she begins by creating a new 'branch' or copy of the main codebase. Then, the developer makes changes and commits them. He or she creates a pull request to merge these changes back into the main branch. This pull request may or may not involve some testing or discussion. Finally, changes are merged back into the main codebase, and the branch can be deleted. 
+
+In this challenge, you will practice this flow. Additionally, GitHub offers a feature for explicitly protecting against changes directly to the main branch. These are called branch protection rules, and you will start by implementing one.
+
+
+<br/>
+<details>
+<summary>📚 Additional Reading</summary>
+
+- General information about protected branches can be found [here](https://docs.github.com/en/github/administering-a-repository/about-protected-branches), with more configuration specifics [here](https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches).
+- General information about branches can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches), with more specifics about creation and deletion [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository).
+- General information about pull requests can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), with more specifics about [creating](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and [reviewing](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests).
+- [About code owners](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners)
+- [Enabling required status checks](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks)
+- [About required reviews for pull requests](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests)
+</details>
+<br />
+
+## Objectives
+
+1. Create a branch protection rule which prevents developers from committing changes to the main branch in the repository.
+
+    <br/>
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+    <li>If your GitHub account was created on the 'Free' tier, then in order to create a Branch Protection rule your repository must be public. To change a repository from private to public, visit the 'Settings' tab, and scroll to the bottom where you have the option to 'Change visibility'.</li>
+    <li>To create branch protection rules:</li>
+    <ol>
+    <li>In your repository, go to "Settings"</li>
+    <li>Select "Branches" on the left hand side.</li>
+    <li>Select "Add Rule"</li>
+    <li>For branch pattern enter the default branch such as main or master</li>
+    <li>Check "Require a pull request before merging" and select "Require review from Code Owners"</li>
+    <li>Select "Create"</li>
+    </ol>
+    </ul>
+    </details>
+    <br>
+
+2. Create a feature branch, make a small change to the code (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), and sync this branch with the GitHub repository.
+
+3. Define a code owner for the `/Application` directory. Your branch policy should require a review from the code owner.
+    <br/>
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    To define code owners:
+    <ul>
+    <li>A new file at the root of the repo is needed called "CODEOWNERS", you will need to define the path and the owner:</li>
+    <code>/Application/ @waynehoggett</code><br/>
+    <li>The following is needed to run during the pull request and only for the application path:</li>
+    <code>pull_request:    </code><br/>
+    <code>branches: [ main ]</code><br/>
+    <code>paths: Application/**</code><br/>
+    </ul>
+    </details>
+    <br>
+
+4. Create and complete a Pull Request, merging your code change into the protected branch.
+
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+    <li>If using the git command line interface, you can find a number of sample git commands that are useful for branching<a href="https://gist.github.com/JamesMGreene/cdd0ac49f90c987e45ac">here</a>. Make sure to focus on the 'git' commands, rather than 'gitflow'.</li>
+    <li>Make sure to focus on the 'git' commands, rather than 'gitflow'.</li>
+    </details>
+    <br>
+
+### Success Criteria
+
+- You have a branch protection rule which prevents changes from being committed to your main branch.
+
+- Changes to the application (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`) are committed to a feature branch.
+
+- Before a pull request is completed:
+    - A code owner must approve the changes ([hint](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners))
+    - A CI workflow is run against the feature branch ensuring the application passes a build and test ([hint](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks))
+
+- A completed pull request merges with the protected branch and is automatically deployed to the dev environment.
+
+
+[< Previous Challenge](../1.6/readme.md) | [Next Challenge >](../1.8/readme.md)
+

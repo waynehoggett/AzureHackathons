@@ -30,7 +30,7 @@ The challenges in this hack are broken into two tracks. There is an Azure DevOps
 
 * [**Challenge 1.3 - Git Workflow**](Challenges/Azure/1.3/readme.md)
 
-* [**Challenge 1.4 - Code Collaboration**](Challenges/Azure/1.4/readme.md)
+* [**Challenge 1.4 - Code Review**](Challenges/Azure/1.4/readme.md)
 
 * [**Challenge 1.5 - Resolving Conflicts**](Challenges/Azure/1.5/readme.md)
 
@@ -48,7 +48,7 @@ The challenges in this hack are broken into two tracks. There is an Azure DevOps
 
 * [**Challenge 1.3 - Git Workflow**](Challenges/GitHub/1.3/readme.md)
 
-* [**Challenge 1.4 - Code Collaboration**](Challenges/GitHub/1.4/readme.md)
+* [**Challenge 1.4 - Code Review**](Challenges/GitHub/1.4/readme.md)
 
 * [**Challenge 1.5 - Resolving Conflicts**](Challenges/GitHub/1.5/readme.md)
 

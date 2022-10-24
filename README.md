@@ -12,6 +12,6 @@ The following hacks are available:
 
 In this hackathon, you will deploy some Azure resources using Bicep and configure some virtual machine settings using PowerShell DSC.
 
-### [2 - GitOps with Azure DevOps and GitHub](2%20-%20GitOps%20with%20Azure%20DevOps%20and%20GitHub%5Creadme.md)
+### [2 - GitOps with Azure DevOps and GitHub](2%20-%20GitOps%20with%20Azure%20DevOps%20and%20GitHub%2Freadme.md)
 
 In this hackathon, you will use Azure DevOps or GitHub to deploy and manage Azure Infrastructure.
