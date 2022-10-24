@@ -1,10 +1,12 @@
 # Challenge 1.2 - Branching
 
-## Before you begin
+<details>
+<summary>🧰 Before you begin</summary>
 
 * Check out the detailed setup guide [here](/Setup/readme.md)
 * Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
+</details>
 
 ## Overview
 
@@ -22,12 +24,13 @@ Your second challenge is to create and configure your branches, once you have fi
 
 ## Objectives
 
-1. Configure the `main` branch to require at least two reviewers and allow requestors to approve their own changes
+1. Configure the `main` branch to require at least two reviewers and allow requestors to approve their own changes.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
         <li><a target="_blank" href="https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser#require_reviewers">About branches and branch policies</a></li>
+        <li>You're going to require just to reviewers in this challenge, but in the real world, you might have more, and you might not allow people to approve their own code.</li>
     </ul>
     </details>
     <br/>

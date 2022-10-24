@@ -1,10 +1,12 @@
 # Challenge 1.9 - Branching Strategies
 
-## Before you begin
+<details>
+<summary>🧰 Before you begin</summary>
 
 * Check out the detailed setup guide [here](/Setup/readme.md)
 * Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
+</details>
 
 ## Overview
 
