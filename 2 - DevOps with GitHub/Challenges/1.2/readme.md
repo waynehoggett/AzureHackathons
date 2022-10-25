@@ -4,24 +4,26 @@
 
 ## Overview
 
-Historically, version control has been the first component that teams implement as they start on a project. It is one of the oldest and most well understood components of DevOps. Version control systems allow developers to collaborate and simultaneously contribute to the same codebase. They can also help teams track versions (so code can be rolled back if bad changes are made) and track bugs, work, and testing by the team. Please take a moment to review the Git handbook to understand the basics of version control, focusing on the distributed version control technology, Git.
+Historically, version control has been the first component that teams implement as they start on a project. It is one of the oldest and most well understood components of DevOps. Version control systems allow developers to collaborate and simultaneously contribute to the same codebase. They can also help teams track versions (so code can be rolled back if bad changes are made) and track bugs, work, and testing by the team. Please take a moment to review the [Git Handbook](https://www.githandbook.com/) to understand the basics of version control, focusing on the distributed version control technology, Git.
+
+Make sure you take a look at the [Programming Tasks](https://www.githandbook.com/prog.php) page of the Git Handbook.
 
 ## Objectives
 
 Now that we have a basic understanding of version control and Git, lets get some code checked into source control. DevOps best practices can apply to any programming language, so for today we have provided you a simple .NET Core web application to use.
 
-1. Begin by cloning the GitHub repository you created in the first challenge to your local computer (hint).
+1. Begin by cloning your GitHub repository.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
-    Cloning a repository 
+    <li>You can use the terminal in Visual Studio Code or your preferred terminal app</li>
+    <li>By default, when you clone your repository, Git will automatically create a subfolder for your code. Make sure you are in the correct parent directory.</li>
+    Cloning a repository:
     <ul>
-    <li>To clone a repository via command line: `git clone $URL` in the directory you want to copy the repository to.</li>
+    <li>To clone a repository via command line: <code>git clone $URL</code> in the directory you want to copy the repository to.</li>
     <li>To get the $URL, go to your repository in github.</li>
     <li>Select "<> Code" which should be a green button.</li>
     <li>In the clone section, click on the copy button to get the url.</li>
-    <li></li>
-    <li></li>
     </ul>
     </details>
 
@@ -49,7 +51,7 @@ Now that we have a basic understanding of version control and Git, lets get some
     <li>Finally we need to push to the remote repository in github by doing <code>git push -u</code>. You may see a warning which will provide the full command if this is the first time you are doing this to target the github server.</li>
     </ul>
     </details>
-    <br>
+
     <details>
     <summary>📚 Additional Reading</summary>
     To 
@@ -57,7 +59,6 @@ Now that we have a basic understanding of version control and Git, lets get some
     <li>If working with the command line, check out these articles on [committing](https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits) and [pushing](https://docs.github.com/en/github/using-git/pushing-commits-to-a-remote-repository) changes.</li>
     </ul>
     </details>
-
 
 ## Success Criteria
 - Your repo is cloned to your local machine and sync'd with GitHub.com
