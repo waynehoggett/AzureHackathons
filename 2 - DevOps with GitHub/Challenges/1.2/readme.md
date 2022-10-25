@@ -21,19 +21,19 @@ Now that we have a basic understanding of version control and Git, lets get some
     <li>By default, when you clone your repository, Git will automatically create a subfolder for your code. Make sure you are in the correct parent directory.</li>
     <br/>
     Cloning a repository:
+    <br/>
     <li>To clone a repository via command line: <code>git clone $URL</code> in the directory you want to copy the repository to.</li>
-    <li>To get the $URL, go to your repository in github.</li>
-    <li>Select "<> Code" which should be a green button.</li>
+    <li>To get the <code>$URL</code>, go to your repository in github.</li>
+    <li>Select <strong><> Code</strong> which should be a green button.</li>
     <li>In the clone section, click on the copy button to get the url.</li>
     </ul>
     </details>
 
     <details>
-    <summary>📚 Additional Reading</summary>
-    To 
+    <summary>📚 Additional Reading including GitHub Desktop Guidance</summary>
     <ul>
-    <li>Cloning a repository via the [command line](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) or [GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop)</li>
-    <li> For those using GitHub Desktop, here is documentation on [commiting](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project) and [pushing](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github) changes to a repository.</li>
+    <li>Cloning a repository via the <a href="(https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">command line</a>) or <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop">GitHub Desktop</a></li>
+    <li>If you're using GitHub Desktop, here is documentation on     <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project">committing</a> and     <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github">pushing</a> changes to a repository.</li>
     </ul>
     </details>
 
