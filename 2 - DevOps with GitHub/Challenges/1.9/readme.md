@@ -1,10 +1,6 @@
 # Challenge 1.9 - Security
 
-## Before you begin
-
-* Check out the detailed setup guide [here](/Setup/readme.md)
-* Every challenge is dependent on the previous challenges, make sure you work through them in order
-* Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
+👉 Don't leave your teammates behind! See if anyone else needs a hand before you start a new challenge.
 
 ## Overview
 
@@ -73,12 +69,6 @@ In this challenge, you will improve the security of your repository using some o
 - Additionally, you should be able to view a new 'open' pull request created by Dependabot requesting an update of a dependency. 
 - Finally, you should be able to view the results of the CodeQL Analysis in the Security tab. 
 
-### Success Criteria
 
-1. You should understand the importance of monitoring and some of the basic features offered by Application Insights.
-
-    - **NOTE**: We are just scratching the surface of what is offered in Azure Monitoring, if you are interested in learning more there is a full What the Hack focused on [Azure Monitoring](https://github.com/microsoft/WhatTheHack/tree/master/007-AzureMonitoring).
-
-
-[< Previous Challenge](../1.6/readme.md) | [Home](../readme.md)
+[< Previous Challenge](../1.8/readme.md) | [Home](../readme.md)
 

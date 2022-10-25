@@ -1,11 +1,5 @@
 # Challenge 1.2 - Repositories
 
-## Before you begin
-
-* Check out the detailed setup guide [here](/Setup/readme.md)
-* Every challenge is dependent on the previous challenges, make sure you work through them in order
-* Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
-
 ## Overview
 
 Historically, version control has been the first component that teams implement as they start on a project. It is one of the oldest and most well understood components of DevOps. Version control systems allow developers to collaborate and simultaneously contribute to the same codebase. They can also help teams track versions (so code can be rolled back if bad changes are made) and track bugs, work, and testing by the team. Please take a moment to review the Git handbook to understand the basics of version control, focusing on the distributed version control technology, Git.

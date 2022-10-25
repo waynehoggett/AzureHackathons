@@ -5,15 +5,26 @@
 * Check out the detailed setup guide [here](/Setup/readme.md)
 * Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
+## Before you begin
+
+* Check out the detailed setup guide [here](../../Setup/readme.md)
+* Every challenge is dependent on the previous challenges, make sure you work through them in order
+* Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
 
 ## Overview
 
-Agile project management is a key component of building a modern DevOps culture at your organization. If you are new to Agile or just want a refresher, we recommend you review the following articles:
+Agile project management is a key component of building a modern DevOps culture at your organization. If you are new to Agile or just want a refresher, check out the additional reading materials below.
 
-1. [What is Agile?](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-agile)
-2. [What is Scrum](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-scrum)
-3. [What is Kanban](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-kanban)
-4. [What is Agile Development?](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-agile-development)
+    <details>
+    <summary>📚 Additional Reading</summary>
+    <ul>
+    <li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-agile">What is Agile?</a></li>
+    <li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-scrum">What is Scrum</a></li>
+    <li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-kanban">What is Kanban</a></li>
+    <li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-agile-development">What is Agile Development?</a></li>
+    </ul>
+    </details>
+    <br />
 
 To help you with Agile project management, there is [GitHub project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards). With GitHub project boards, you can quickly and easily start tracking your backlog, tasks, issues/bugs and features associated with your project.  
 

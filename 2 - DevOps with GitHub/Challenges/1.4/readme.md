@@ -1,10 +1,6 @@
 # Challenge 1.4 - Continuous Integration
 
-## Before you begin
-
-* Check out the detailed setup guide [here](/Setup/readme.md)
-* Every challenge is dependent on the previous challenges, make sure you work through them in order
-* Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
+👉 Don't leave your teammates behind! See if anyone else needs a hand before you start a new challenge.
 
 ## Overview
 
