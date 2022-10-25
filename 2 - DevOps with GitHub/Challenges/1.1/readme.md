@@ -22,9 +22,7 @@ Agile project management is a key component of building a modern DevOps culture 
 </details>
 <br />
 
-To help you with Agile project management, there is [GitHub project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards). With GitHub project boards, you can quickly and easily start tracking your backlog, tasks, issues/bugs and features associated with your project.  
-
-Review the following introduction to GitHub project boards: [GitHub project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards).
+To help you with Agile project management, there is [GitHub projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects). With GitHub projects, you can quickly and easily start tracking your backlog, tasks, issues/bugs and features associated with your project.  
 
 ## Objectives
 
@@ -50,23 +48,26 @@ Review the following introduction to GitHub project boards: [GitHub project boar
     </ul>
     </details>
 
-3. Create a project board using the **automated kanban** template.
+3. Create a project board.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
-    To Create Automated Kanban Board:
+    To create a project board:
     <ul>
     <li>In your repository, select "Projects"</li>
-    <li>Make sure on the left hand side you select "Projects", the one not in beta</li>
+    <li>Select "Add Project"</li>
+    <li>You may need to navigate to your profile</li>
     <li>Select "New Project"</li>
-    <li>Fill in the name you want.</li>
-    <li>Select "Automated Kanban" in the template drop down.</li>
-    <li>Select "Create Project</li>
+    <li>Select the <strong>Board</strong> option under Start from scratch</li>
+    <li>Select Create</li>
+    <li>Optionally change the name of your project</li>
     </ul>
     </details>
 
-4. Create an issue for this challenge and each of the remaining challenges (i.e., create 8 issues total - skip challenge 0). When creating each issue, make sure to:
-    - Assign an owner for each issue. Assign the `challenge 1` work item to another member of your team, have them assign their `challenge 1` work item to you. Assign all remaining challenges to yourself.
+💡 TIP: Before continuing, make sure your team mate has accepted your invite.
+
+4. Create an issue for this challenge and each of the remaining challenges (i.e., create 9). When creating each issue, make sure to:
+    - Assign an owner for each issue. Assign the `Challenge 1` work item to another member of your team, have them assign their `Challenge 1` work item to you. Assign all remaining challenges to yourself.
     - Associate each issue with the project board you just created 
 
     <br /><br />
