@@ -2,7 +2,6 @@
 
 👉 Don't leave your teammates behind! See if anyone else needs a hand before you start a new challenge.
 
-
 ## Overview
 
 Historically, version control has been the first component that teams implement as they start on a project. It is one of the oldest and most well understood components of DevOps. Version control systems allow developers to collaborate and simultaneously contribute to the same codebase. They can also help teams track versions (so code can be rolled back if bad changes are made) and track bugs, work, and testing by the team. Please take a moment to review the Git handbook to understand the basics of version control, focusing on the distributed version control technology, Git.
@@ -13,7 +12,6 @@ Now that we have a basic understanding of version control and Git, lets get some
 
 1. Begin by cloning the GitHub repository you created in the first challenge to your local computer (hint).
 
-    <br /><br />
     <details>
     <summary>💡 Tips and Tricks</summary>
     Cloning a repository 
@@ -26,7 +24,6 @@ Now that we have a basic understanding of version control and Git, lets get some
     <li></li>
     </ul>
     </details>
-    <br />
 
     <details>
     <summary>📚 Additional Reading</summary>
@@ -36,7 +33,6 @@ Now that we have a basic understanding of version control and Git, lets get some
     <li> For those using GitHub Desktop, here is documentation on [commiting](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project) and [pushing](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github) changes to a repository.</li>
     </ul>
     </details>
-    <br />
 
 2. Next, obtain the code (sample application and ARM template) below and unzip the archive to the local repository:
 
@@ -66,7 +62,6 @@ Now that we have a basic understanding of version control and Git, lets get some
 ## Success Criteria
 - Your repo is cloned to your local machine and sync'd with GitHub.com
 - The "Application" and "ARMTemplates" folders are at the root of your repository
-
 
 [< Previous Challenge](../1.1/readme.md) | [Next Challenge >](../1.3/readme.md)
 
