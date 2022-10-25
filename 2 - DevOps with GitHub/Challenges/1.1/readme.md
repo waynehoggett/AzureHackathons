@@ -31,8 +31,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 1. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. 
 
 2. Add collaborators from your team to your repo. 
-    <br />
-    <br />
+
     <details>
     <summary>💡 Tips and Tricks</summary>
     To add collaborators
@@ -42,10 +41,8 @@ Review the following introduction to GitHub project boards: [GitHub project boar
     <li>Select "Add people"</li>
     <li>In the popup, enter the user you wish to add</li>
     <li>The user will need to accept the invite before this is complete.</li>
-    <li></li>
     </ul>
     </details>
-    <br />
 
 3. Create a project board using the "automated kanban" template.
     <br />
@@ -71,7 +68,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
     <br /><br />
     <details>
     <summary>💡 Tips and Tricks</summary>
-    To Creating Issues
+    To create issues
     <ul>
     <li>In your repository, select "Issues" </li>
     <li>Select "New Issue"</li>

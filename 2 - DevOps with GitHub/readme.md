@@ -6,7 +6,7 @@ DevOps should be considered a journey, not a destination. The goal of this chall
 
 ## Before you begin
 
-* Check out the detailed setup guide [here](../../Setup/readme.md)
+* Check out the detailed setup guide [here](/2%20-%20DevOps%20with%20GitHub/Setup/readme.md)
 * Every challenge is dependent on the previous challenges, make sure you work through them in order
 * Don't leave your team mates behind! See if anyone else needs a hand before you start a new challenge
 
