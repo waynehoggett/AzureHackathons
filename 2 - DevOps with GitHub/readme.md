@@ -34,4 +34,4 @@ This DevOps with GitHub hack will help you learn:
 
 ## Thanks
 
-Huge thanks to the authors of the original What the Hack that this is based on. Throw your support behind them and the project [here](https://github.com/microsoft/WhatTheHack/blob/master/031-DevOpsWithGitHub/readme.md).
+Huge thanks to the authors of the original [What the Hack](https://github.com/microsoft/WhatTheHack) that this is based on. Throw your support behind them and the project [here](https://github.com/microsoft/WhatTheHack/blob/master/031-DevOpsWithGitHub/readme.md).
