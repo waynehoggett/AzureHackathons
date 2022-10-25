@@ -54,17 +54,40 @@ To help you with Agile project management, there is [GitHub projects](https://do
     <summary>💡 Tips and Tricks</summary>
     To create a project board:
     <ul>
-    <li>In your repository, select "Projects"</li>
-    <li>Select "Add Project"</li>
+    <li>In your repository, select <strong>Projects</strong></li>
+    <li>Select <strong>Add Project</strong></li>
     <li>You may need to navigate to your profile</li>
-    <li>Select "New Project"</li>
-    <li>Select the <strong>Board</strong> option under Start from scratch</li>
+    <li>Select <strong>New Project</strong></li>
+    <li>Select the <strong>Board</strong> option under <strong>Start from scratch</strong></li>
     <li>Select Create</li>
     <li>Optionally change the name of your project</li>
     </ul>
     </details>
 
-💡 TIP: Before continuing, make sure your team mate has accepted your invite.
+4. Enable the **Item added to project** workflow
+
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    To edit workflows:
+    <ul>
+    <li>In your project, select the ellipsis <code>...</code> and select <strong>Workflows</strong></li>
+    <li>In the default workflows list, select <strong>Item added to project</strong> and set the status to <strong>On</strong></li>
+    </ul>
+    </details>
+
+5. Add the **Project** to the Repository**
+
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    To create a project board:
+    <ul>
+    <li>In your repository, select <strong>Projects</strong></li>
+    <li>In your repository, select <strong>Add project</strong></li>
+    <li>Select the project you created</li>
+    </ul>
+    </details>
+
+❗ IMPORTANT: Before continuing, make sure at least one teammate has accepted your invite.
 
 4. Create an issue for this challenge and each of the remaining challenges (i.e., create 9). When creating each issue, make sure to:
     - Assign an owner for each issue. Assign the `Challenge 1` work item to another member of your team, have them assign their `Challenge 1` work item to you. Assign all remaining challenges to yourself.
