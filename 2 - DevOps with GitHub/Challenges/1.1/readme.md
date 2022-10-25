@@ -64,7 +64,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     </ul>
     </details>
 
-4. Enable the **Item added to project** workflow
+4. Enable the **Item added to project** workflow.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -75,7 +75,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     </ul>
     </details>
 
-5. Add the **Project** to the Repository**
+5. Add the **Project** to the **Repository**.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -97,27 +97,28 @@ To help you with Agile project management, there is [GitHub projects](https://do
 <summary>💡 Tips and Tricks</summary>
 To create issues:
 <ul>
-<li>In your repository, select "Issues" </li>
-<li>Select "New Issue"</li>
-<li>Create the issue for each challenge.  Make sure you link the issue to the project on the right hand side before creating.</li>
-<li> New issues if linked properly should show up in the "To do" column.  Once you set to closed, it should move to "Done" column.  If you are viewing the </li>
+<li>In your repository, select <strong>Issues</strong> </li>
+<li>Select <strong>New Issue</strong></li>
+<li>Create the issue for each challenge. Make sure you link the issue to the project on the right hand side before creating.</li>
+<li> New issues if linked properly should show up in the <strong>To do</strong> column. Once you set to closed, it should move to <strong>Done</strong> column. If you are viewing the </li>
 </ul>
 </details>
 
-5. Review the project board and ensure your issues automatically appear under the "To do" column.
+5. Review the project board and ensure your issues automatically appear under the**To do** column.
 
-6. Since you are currently working on Challenge 1, drag the `Challenge 1` card from the "To do" column to "In progress."
+6. Since you are currently working on Challenge 1, drag the **Challenge 1** card from the **To do** column to **In progress**.
 
-7. Ask your team member to close the `Challenge 1` issue you assigned to them. Review your project board to see if the issue moved to the 'Done' column automatically. 
+7. Ask your team member to close the **Challenge 1** issue you assigned to them. Review your project board to see if the issue moved to the **Done** column automatically. 
 
-8. After you complete each of the following challenges, be sure to close each associated issue. 
+8. After you complete each of the following challenges, be sure to close each associated issue. This might seem meaningless, but it will get you in the rhythm of a typical DevOps Engineer.
 
 ## Success Criteria
 
- - You have added one or more collaborators to your repo
- - You have a project board using the automation kanban template with 9 issues (8 open, 1 closed by a team member)
-  - New issues automatically appear under the "To do" column
- - Closed issues automatically appear under the "Done" column
+- You have added one or more collaborators to your repo
+- You have a project board, associated it with your repository
+- You have created 9 issues (8 open, 1 closed by a team member)
+- New issues automatically appear under the "To do" column
+- Closed issues automatically appear under the "Done" column
 
 [Next Challenge >](../1.2/readme.md)
 
