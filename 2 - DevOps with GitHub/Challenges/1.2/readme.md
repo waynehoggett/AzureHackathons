@@ -19,6 +19,7 @@ Now that we have a basic understanding of version control and Git, lets get some
     <ul>
     <li>You can use the terminal in Visual Studio Code or your preferred terminal app</li>
     <li>By default, when you clone your repository, Git will automatically create a subfolder for your code. Make sure you are in the correct parent directory.</li>
+    <br/>
     Cloning a repository:
     <li>To clone a repository via command line: <code>git clone $URL</code> in the directory you want to copy the repository to.</li>
     <li>To get the $URL, go to your repository in github.</li>
