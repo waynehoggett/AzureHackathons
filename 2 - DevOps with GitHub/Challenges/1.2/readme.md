@@ -30,7 +30,7 @@ Now that we have a basic understanding of version control and Git, lets get some
     </details>
 
     <details>
-    <summary>📚 Additional Reading including GitHub Desktop Guidance</summary>
+    <summary>📚 Additional Reading (including GitHub Desktop guidance)</summary>
     <ul>
     <li>Cloning a repository via the <a href="(https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">command line</a>) or <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop">GitHub Desktop</a></li>
     <li>If you're using GitHub Desktop, here is documentation on     <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project">committing</a> and     <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github">pushing</a> changes to a repository.</li>
@@ -39,7 +39,7 @@ Now that we have a basic understanding of version control and Git, lets get some
 
 2. Next, obtain the code (sample application and ARM template) below and unzip the archive to the local repository:
 
-    [Download Source Code](/2%20-%20DevOps%20with%20GitHub/Resources/Source.zip)
+    [Download Source Code](https://github.com/waynehoggett/AzureHackathons/raw/main/2%20-%20DevOps%20with%20GitHub/Resources/Source.zip)
 
 3. Finally, commit the files to your GitHub repository using your preferred Git client.
 
@@ -57,7 +57,7 @@ Now that we have a basic understanding of version control and Git, lets get some
     <summary>📚 Additional Reading</summary>
     To 
     <ul>
-    <li>If working with the command line, check out these articles on [committing](https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits) and [pushing](https://docs.github.com/en/github/using-git/pushing-commits-to-a-remote-repository) changes.</li>
+    <li>If working with the command line, check out these articles on <a href="https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits">committing</a> and <a href="https://docs.github.com/en/github/using-git/pushing-commits-to-a-remote-repository">pushing</a> changes.</li>
     </ul>
     </details>
 
