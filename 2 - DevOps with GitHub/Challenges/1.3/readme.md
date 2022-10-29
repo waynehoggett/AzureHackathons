@@ -23,7 +23,7 @@ Now that we have some code, we need an environment to deploy it to! The term Inf
 
 We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group, App Service Plan, Application Insights instance, and Azure Container Registry. 
 
-🗈 NOTE: in real deployments, all your environments will likely not share these resources.
+🗈 NOTE: In real deployments, all your environments will likely not share these resources.
 
 1. Review the ARM template. Notice how it defines a number of parameters and uses them to create the Resource Group, App Service Plan, Web App, Application Insights, and Azure Container Registry. 
 
@@ -33,27 +33,54 @@ Notice the `webAppName` parameter on line #6 - you will override this placeholde
 
 3. Create a GitHub workflow (`deploy.yml`) that runs manually (*not* triggered by a push or pull request).
 
-<details>
-<summary>💡 Tips and Tricks</summary>
-To create a workflow:
-<ol>
-<li>In your repository, select <strong>Actions</strong></li>
-<li>Select <strong>Skip this and set up a workflow yourself</strong></li>
-<li>To make your workflow run manually, type the following code:
-  <code>on:</code><br />
-  <code>push</code><br />
-</li>
-</ol>
-<ul>
-<li>Refer to the <strong>documentation</strong> tab of your workflow for more details</li>
-<li>Continue with step 4 to configure the remainder of your workflow</li>
-</ul>
-</details>
+  <details>
+  <summary>💡 Tips and Tricks</summary>
+  To create a workflow:
+  <ol>
+  <li>In your repository, select <strong>Actions</strong></li>
+  <li>Search for <strong>Manual workflow</strong> and select <strong>Configure</strong></li>
+  <li>Provide a name for your workflow, with the <code>name:</code> property</li>
+  <li>To make your workflow run manually, use the following code:<br />
+    <code>on:</code><br />
+    <code> workflow_dispatch:</code><br />
+  </li>
+  </ol>
+  <ul>
+  <li>Refer to the <strong>documentation</strong> tab of your workflow for more details</li>
+  <li>Any lines starting with a <code>#</code> are comments, you can read them to learn more, or delete them if you like</li>
+  <li>Continue with step 4 to configure the remainder of your workflow</li>
+  </ul>
+  </details>
 
 4. Configure your workflow to accomplish the following:
 
     - Use a service principal to authenticate to Azure
+
+        <details>
+        <summary>💡 Tips and Tricks</summary>
+        A GitHub Action workflow can have multiple jobs and jobs can have multiple steps, your current workflow likely has a job called <code>greet:</code>. You can rename this if you like, <code>build-and-deploy</code> is frequently used as a name in examples.
+        <ol>
+        <li>Search the marketplace for an <strong>Azure login</strong> Action</li>
+        <li>Select the action and select the latest version to see the code snippet</li>
+        <li>Copy the code and replace the content under <code>steps:</code></li>
+        <br/>
+          🗈 NOTE: Indentation is important in YAML, intellisense will likely red underline text that is not indented correctly. If required, use tab to indent all the text you've added.
+        <br/>
+        <li>See the documentation for the Azure Login action by selecting the <a href="https://github.com/marketplace/actions/azure-login#github-actions-for-deploying-to-azure"><strong>View full Marketplace listing</strong></a> link</li>
+        <li>You will see that you're going to need some secrets, learn about GitHub Secrets <a href="https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository">here</a></li>
+        <li>You will need to create a secret, details for that are in the Marketplace listing <a href="https://github.com/marketplace/actions/azure-login#configure-deployment-credentials">here</a></li>
+        </ol>
+        </details>
+
     - Use the "Deploy Azure Resource Manager (ARM) Template" action to call your ARM template in your repo
+
+        <details>
+        <summary>💡 Tips and Tricks</summary>
+         <ul>
+        <li>Use what you learned in the previous step to complete this step, you will need to review the Marketplace listing to determine which values you need to provide</li>
+        </ul>
+        </details>
+
 
 5. Manually run your workflow. When your workflow completes successfully, go to the Azure portal to see the `dev` environment. 
 
@@ -77,22 +104,20 @@ You should see all three environments in Azure.
 Your YAML file should look similar to:
 
 ```yaml
+name: Azure ARM
 on:
-  push
+  workflow_dispatch:
 
 env:
   targetEnv: Dev
 
-name: Azure ARM
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    # Checkout code
-    - uses: actions/checkout@main
 
       # Log into Azure
-    - uses: azure/login@v1
+    - uses: azure/login@v1.4.6
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
