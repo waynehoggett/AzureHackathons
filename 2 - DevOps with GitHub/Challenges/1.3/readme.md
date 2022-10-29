@@ -40,9 +40,8 @@ To create a workflow:
 <li>In your repository, select <strong>Actions</strong></li>
 <li>Select <strong>Skip this and set up a workflow yourself</strong></li>
 <li>To make your workflow run manually, type the following code:
-<code>
-on:<br/>
-  push<br/>
+  <code>on:</code><br />
+  <code>push</code><br />
 </li>
 </ol>
 <ul>
