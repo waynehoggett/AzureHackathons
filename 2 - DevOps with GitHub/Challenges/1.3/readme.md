@@ -6,7 +6,6 @@
 
 Now that we have some code, we need an environment to deploy it to! The term Infrastructure as Code (IaC) refers to using templates (code) to repeatedly and consistently create the dev, test, prod (infrastructure) environments. We can automate the process of deploying the Azure services we need with an Azure Resource Manager (ARM) template. 
 
-<br />
 <details>
 <summary>📚 Additional Reading</summary>
 <ul>
@@ -19,17 +18,38 @@ Now that we have some code, we need an environment to deploy it to! The term Inf
 <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli#parameters">Overriding ARM template parameters</a></li>
 </ul>
 </details>
-<br />
 
 ## Objectives
 
-We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group, App Service Plan, Application Insights instance, and Azure Container Registry. NOTE: in real deployments, you will likely not share all of these resources.
+We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group, App Service Plan, Application Insights instance, and Azure Container Registry. 
+
+🗈 NOTE: in real deployments, all your environments will likely not share these resources.
 
 1. Review the ARM template. Notice how it defines a number of parameters and uses them to create the Resource Group, App Service Plan, Web App, Application Insights, and Azure Container Registry. 
 
-2. Update the parameters section of the ARM template, replacing all instances of `<prefix>` with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources. Notice the `webAppName` parameter on line #6 - you will override this placeholder value later when you call the ARM template.
+2. Update the parameters section of the ARM template, replacing all instances of `<prefix>` with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources. 
+
+Notice the `webAppName` parameter on line #6 - you will override this placeholder value later when you call the ARM template.
 
 3. Create a GitHub workflow (`deploy.yml`) that runs manually (*not* triggered by a push or pull request).
+
+<details>
+<summary>💡 Tips and Tricks</summary>
+To create a workflow:
+<ol>
+<li>In your repository, select <strong>Actions</strong></li>
+<li>Select <strong>Skip this and set up a workflow yourself</strong></li>
+<li>To make your workflow run manually, type the following code:
+<code>
+on:<br/>
+  push<br/>
+</li>
+</ol>
+<ul>
+<li>Refer to the <strong>documentation</strong> tab of your workflow for more details</li>
+<li>Continue with step 4 to configure the remainder of your workflow</li>
+</ul>
+</details>
 
 4. Configure your workflow to accomplish the following:
 

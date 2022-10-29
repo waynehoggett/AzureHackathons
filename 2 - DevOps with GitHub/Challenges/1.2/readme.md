@@ -63,7 +63,7 @@ Now that we have a basic understanding of version control and Git, lets get some
 
 ## Success Criteria
 - Your repo is cloned to your local machine and sync'd with GitHub.com
-- The "Application" and "ARMTemplates" folders are at the root of your repository
+- The "Application" and "ARM-Templates" folders are at the root of your repository
 
 [< Previous Challenge](../1.1/readme.md) | [Next Challenge >](../1.3/readme.md)
 
