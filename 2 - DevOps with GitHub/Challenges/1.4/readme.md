@@ -51,22 +51,25 @@ In this challenge, you will build and test the .NET Core application.
     </ul>
     </details>
 
-5. Configure path filters to *only* trigger this workflow for changes in the `/Application` folder.
+5. Configure path filters to *only* trigger this workflow for changes in the `Application` folder.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
       <li><a href="https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-paths">Understanding workflow path filters</a></li>
+      <li>Common mistakes for the path include, adding a leading slash, e.g. <code>/Application</code> might not work but <code>Application</code> might</li>
+      <li>You also might need to include a wildcard, what's the difference between <code>Application/*</code> and <code>Application/**</code>?</li>
     </ul>
     </details>
 
-6. Update the predefined steps used to build the .NET Core application (note: for each step below, you will need to update each command to pass the relative path to the  `.csproj` as an argument):
+6. Update the predefined steps used to build the .NET Core application (note: for each step below, you will need to update each command to pass the relative path to the `.csproj` as an argument):
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
       <li><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet#dotnet-commands">dotnet commands</a></li>
-      <li>The <strong>.csproj</strong> file is located in <code>./Application/tests/RazorPagesTestSample.Tests/RazorPagesTestSample.Tests.csproj</code></li>
+      <li>The <strong>.csproj</strong> project file is located in <code>./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj</code></li>
+      <li>The <strong>.csproj</strong> test file is located in <code>./Application/tests/RazorPagesTestSample.Tests/RazorPagesTestSample.Tests.csproj</code></li>
     </ul>
     </details>
 
@@ -81,11 +84,11 @@ In this challenge, you will build and test the .NET Core application.
 
 7. Save and test the workflow by making a small change to the application code (i.e., add a comment). Commit, push and ensure the workflow completes successfully.
 
-At this point, any changes pushed to the `/Application` folder automatically triggers the workflow...and that is Continuous Integration! 
+At this point, any changes pushed to the `Application` folder automatically triggers the workflow...and that is Continuous Integration! 
 
 ## Success Criteria
 
-- Any changes pushed to the `/Application` folder automatically triggers the workflow 
+- Any changes pushed to the `Application` folder automatically triggers the workflow 
 - .NET Core restore, build and test steps completes successfully
 
 
