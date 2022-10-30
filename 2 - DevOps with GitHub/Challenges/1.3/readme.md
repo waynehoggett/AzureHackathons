@@ -89,6 +89,7 @@ We will use GitHub Actions to automate the deployment of our Azure infrastructur
         <br/>
           🗈 NOTE: Indentation is important in YAML, intellisense will likely red underline text that is not indented correctly. If required, use tab to indent all the text you've added.
         <br/>
+
         <li>See the documentation for the Azure Login action by selecting the <a href="https://github.com/marketplace/actions/azure-login#github-actions-for-deploying-to-azure"><strong>View full Marketplace listing</strong></a> link</li>
         <li>You will see that you're going to need some secrets, learn about GitHub Secrets <a href="https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository">here</a></li>
         <li>You will need to create a secret, details for that are in the Marketplace listing <a href="https://github.com/marketplace/actions/azure-login#configure-deployment-credentials">here</a></li>
@@ -178,9 +179,9 @@ jobs:
       with:
         scope: resourcegroup
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: WayneH-RG
+        resourceGroupName: <Your resource group name>
         template: ./ARM-Templates/container-webapp-template.json
-        parameters: webAppName=whack1devops-${{ env.targetEnv }}
+        parameters: webAppName=<Your unique webapp prefix>-${{ env.targetEnv }}
 ```
 
 [< Previous Challenge](../1.2/readme.md) | [Next Challenge >](../1.4/readme.md)
