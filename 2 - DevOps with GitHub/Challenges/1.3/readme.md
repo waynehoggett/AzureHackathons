@@ -118,7 +118,7 @@ We will use GitHub Actions to automate the deployment of our Azure infrastructur
       </ul>
       </details>
 
-      ❗ If you get an error, spend a few moments troublshooting, but don't get blocked for too long, ask your team for help, or your coach if required. There is a lot to learn in this hackathon, and you will miss out on some cool stuff if you spend too much time stuck here.
+      ❗ If you get an error, spend a few moments troubleshooting, but don't get blocked for too long, ask your team for help, or your coach if required. There is a lot to learn in this hackathon, and you will miss out on some cool stuff if you spend too much time stuck here.
 
       ✔️ If everything worked, we are going to call the ARM template again, but override the `webAppName` parameter in the ARM template.
 
@@ -175,7 +175,7 @@ jobs:
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: Azure/arm-deploy@v1.0.8
+    - uses: Azure/arm-deploy@v1
       with:
         scope: resourcegroup
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
