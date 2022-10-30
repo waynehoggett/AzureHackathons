@@ -1,5 +1,11 @@
 # Setup
 
+You need to complete Three (3) setup steps, make sure you complete all the required setup steps so you can hit the ground running on the day!
+
+1. GitHub
+2. Software
+3. Azure
+
 ## GitHub
 
 You will need your own free GitHub Account, you can register here:
@@ -28,3 +34,9 @@ Here are the instructions for your Operating System:
 
 ## Download and Install GitHub Desktop
 * [GitHub Desktop](https://desktop.github.com/)
+
+## Azure
+
+Use the Microsoft Account you used to register for the hackathon to login to Azure, and create a Resource Group that will be used to deploy your resources to, use a unique name, e.g. RG-<YourName>
+
+Note: You can use any region for your resource group, but stick to the "Recommended" regions.
