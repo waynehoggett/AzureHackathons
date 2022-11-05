@@ -1,4 +1,4 @@
-# Challenge 1.5 - Build and push Docker image to container registry
+# Challenge 1.5 - Build and Push Docker image to container registry
 
 👉 Don't leave your teammates behind! See if anyone else needs a hand before you start a new challenge.
 

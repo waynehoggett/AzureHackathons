@@ -1,4 +1,4 @@
-# Challenge 1.6 - Build and push Docker image to container registry
+# Challenge 1.6 - Continuous Delivery (CD)
 
 👉 Don't leave your teammates behind! See if anyone else needs a hand before you start a new challenge.
 
@@ -21,154 +21,156 @@ In this challenge, we will use GitHub Actions to deploy our container image to t
 
 💡 Tip: You can use your code editor (VS Code) to update your workflow file locally on your machine. Remember to commit and push any changes.
 
-Extend the workflow you created in Challenge 1.4 to:
+Extend the .NET workflow you created in Challenge 1.4 to:
 
 1. Configure your `dev` environment to pull the latest container image from ACR. 
-   - Login to Azure using your service principal, if needed ([hint](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal))
+   - Login to Azure using your service principal
+      <details>
+      <summary>💡 Tips and Tricks</summary>
+      <ul>
+      <li>Search the GitHub Actions Marketplace for <code>Azure WebApp</code>. You can use the <a href="https://github.com/marketplace/actions/azure-webapp#sample-workflow-to-build-and-deploy-a-nodejs-app-to-containerized-webapp-using-publish-profile">GitHub Action for deploying to Azure Web App</a></li>
+      <li>Save yourself some time here, remember that you logged into Azure with a Service Principal in your manual workflow</li>
+      <li>No need to generate deployment credentials, these are provided by your coach.</li>
+      </ul>
+      </details>
+
    - Use the `Azure/webapps-deploy@v2` [action](https://github.com/Azure/webapps-deploy) to update the Web App to pull the latest image from ACR. Key parameters to configure:
       - `app-name` - the name of the wep app instance to target
       - `images` - the path to the image you pushed to ACR
 
-2. Make a small change to your application  (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
+      <summary>💡 Tips and Tricks</summary>
+      <ul>
+      <li><a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#deploy-to-an-app-service-container">Deploy to an App Service container</a>
+      </li>
+      <li><a href="https://github.com/marketplace/actions/azure-webapp">GitHub Action for deploying to Azure Web App</a></li>
+      </ul>
+      </details>
+
+2. Make a small change to your application  (e.g.`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
 
 3. Configure your workflow to deploy to your `test` and `prod` environments and after a manual approval for *each* environment.
 
+      <summary>💡 Tips and Tricks</summary>
+      <ul>
+      <li>It might be time to configure some<a href="https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#about-environments">environments</a>
+      </li>
+      </ul>
+      </details>
+
 ## Success Criteria
 
-- A new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
+* A small change to /Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml automatically shows up on the website running in the dev environment (i.e., <prefix>devops-dev.azurewebsites.net).
+ * Manual approval is required to deploy to the test and prod environments.
+
 
 Your YAML file should look similar to the below file:
 
 ```yaml
-name: CI
-
-env:
-  registryName: devopsreg.azurecr.io
-  repositoryName: wth/razorcore
-  dockerfilePath: Application/src/RazorPagesTestSample
-  tag: ${{github.run_number}}
+name: .NET
 
 on:
   push:
     branches: [ main ]
-    paths:
-    - 'Application/**'
-    - '.github/workflows/ci.yml'
-      
-jobs:
+    paths: Application/**
+  pull_request:
+    branches: [ main ]
+    paths: Application/**
+    
+env:
+  registryName: whack1devopsreg.azurecr.io
+  repositoryName: wth/dotnetcoreapp
+  dockerFolderPath: Application/src/RazorPagesTestSample
+  tag: ${{ github.run_number }}
 
+jobs:
   build-and-test:
-  
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 2.2
+    - name: Restore dependencies
+      run: dotnet restore ./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
+    - name: Build
+      run: dotnet build --no-restore ./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
+    - name: Test
+      run: dotnet test --no-build --verbosity normal ./Application/tests/RazorPagesTestSample.Tests/RazorPagesTestSample.Tests.csproj
+
+  docker-build-and-push:
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-    - name: Install dependencies
-      run: dotnet restore ./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
-    - name: Build
-      run: dotnet build ./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj --configuration Release --no-restore
-    - name: Test
-      run: dotnet test ./Application/tests/RazorPagesTestSample.Tests/RazorPagesTestSample.Tests.csproj --no-restore --verbosity normal
-    - uses: actions/github-script@0.9.0
-      if: failure()
+    
+    - name: Docker Login
+      uses: docker/login-action@v2.1.0
       with:
-        github-token: ${{secrets.GITHUB_TOKEN}}
-        script: |
-          let body = "${{ env.build_name }} Worflow Failure \n Build Number: ${{ github.run_number }} \n Build Log: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} \n SHA: [${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }}) \n";
-          github.issues.create({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            title: "${{ env.build_name }} Workflow ${{ github.run_number }} Failed! ",
-            body: body
-          });
-  
-  docker-build-and-push:
-  
-    needs: build-and-test
-    runs-on: ubuntu-latest
+        registry: ${{ env.registryName }}
+        username: ${{ secrets.ACR_USERNAME }}
+        password: ${{ secrets.ACR_PASSWORD }}
+        
+    - name: Docker build
+      run: docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerFolderPath
     
-    steps:
-      - uses: actions/checkout@v2
+    - name: Docker Push
+      run: docker push $registryName/$repositoryName:$tag
       
-      - name: Azure Container Registry Login
-        uses: Azure/docker-login@v1
-        with:
-          # Container registry username
-          username: ${{ secrets.ACR_USERNAME }}
-          # Container registry password
-          password: ${{ secrets.ACR_PASSWORD }}
-          # Container registry server url
-          login-server: ${{ secrets.ACR_NAME }}
-
-      - name: Docker build
-        run: docker build -t ${{secrets.ACR_NAME}}/$repositoryName:$tag --build-arg build_version=$tag $dockerfilePath
-
-      - name: Docker Push
-        run: docker push ${{secrets.ACR_NAME}}/$repositoryName:$tag
-    
   deploy-to-dev:
-  
     runs-on: ubuntu-latest
     needs: docker-build-and-push
     environment:
       name: dev
-      url: https://devopsreg-dev.azurewebsites.net/
-    
+      url: https://whack1devops-dev.azurewebsites.net/
     steps:
-      - name: 'Login via Azure CLI'
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'devopsreg-dev'
-          images: ${{secrets.ACR_NAME}}/wth/razorcore:${{github.run_number}}
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'whack1devops-dev'
+        images: '${{env.registryName}}/${{env.repositoryName}}:${{env.tag}}'
+    - name: Azure logout
+      run: |
+        az logout
 
   deploy-to-test:
-  
-    runs-on: ubuntu-latest
-    needs: deploy-to-dev
-    environment:
-      name: test
-      url: https://devopsreg-test.azurewebsites.net/
-    
-    steps:
-    - uses: actions/checkout@v2
-    
-    - name: 'Login via Azure CLI'
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.WEBAPP_TEST_CREDS }}
-
-    - uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'devopsreg-test'
-        images: ${{secrets.ACR_NAME}}/wth/razorcore:${{github.run_number}}
-
+      runs-on: ubuntu-latest
+      needs: [docker-build-and-push, deploy-to-dev]
+      environment:
+        name: test
+        url: https://whack1devops-test.azurewebsites.net/
+      steps:
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'whack1devops-test'
+          images: '${{env.registryName}}/${{env.repositoryName}}:${{env.tag}}'
+      - name: Azure logout
+        run: |
+          az logout
+             
   deploy-to-prod:
-  
-    runs-on: ubuntu-latest
-    needs: deploy-to-test
-    environment:
-      name: prod
-      url: https://devopsreg-prod.azurewebsites.net/
-    
-    steps:
-    - uses: actions/checkout@v2
-    
-    - name: 'Login via Azure CLI'
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.PROD_WEBAPP }}
-
-    - uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'devopsreg-prod'
-        images: ${{secrets.ACR_NAME}}/wth/razorcore:${{github.run_number}}
-
+      runs-on: ubuntu-latest
+      needs: [docker-build-and-push, deploy-to-test]
+      environment:
+        name: prod
+        url: https://whack1devops-prod.azurewebsites.net/
+      steps:
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'whack1devops-prod'
+          images: '${{env.registryName}}/${{env.repositoryName}}:${{env.tag}}'
+      - name: Azure logout
+        run: |
+          az logout
 ```
 
 [< Previous Challenge](../1.5/readme.md) | [Next Challenge >](../1.7/readme.md)
