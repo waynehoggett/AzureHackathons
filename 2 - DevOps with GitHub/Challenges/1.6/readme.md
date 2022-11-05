@@ -26,7 +26,6 @@ Extend the .NET workflow you created in Challenge 1.4 to:
       <details>
       <summary>💡 Tips and Tricks</summary>
       <ul>
-      <li>Search the GitHub Actions Marketplace for <code>Azure WebApp</code>. You can use the <a href="https://github.com/marketplace/actions/azure-webapp#sample-workflow-to-build-and-deploy-a-nodejs-app-to-containerized-webapp-using-publish-profile">GitHub Action for deploying to Azure Web App</a></li>
       <li>Save yourself some time here, remember that you logged into Azure with a Service Principal in your manual workflow</li>
       <li>No need to generate deployment credentials, these are provided by your coach.</li>
       </ul>
@@ -40,6 +39,7 @@ Extend the .NET workflow you created in Challenge 1.4 to:
       <details>
       <summary>💡 Tips and Tricks</summary>
       <ul>
+      <li>Search the GitHub Actions Marketplace for <code>Azure WebApp</code>. You can use the <a href="https://github.com/marketplace/actions/azure-webapp#sample-workflow-to-build-and-deploy-a-nodejs-app-to-containerized-webapp-using-publish-profile">GitHub Action for deploying to Azure Web App</a></li>
       <li><a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#deploy-to-an-app-service-container">Deploy to an App Service container</a>
       </li>
       <li><a href="https://github.com/marketplace/actions/azure-webapp">GitHub Action for deploying to Azure Web App</a></li>
