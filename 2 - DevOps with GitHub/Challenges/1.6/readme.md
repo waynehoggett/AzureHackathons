@@ -36,6 +36,7 @@ Extend the .NET workflow you created in Challenge 1.4 to:
       - `app-name` - the name of the wep app instance to target
       - `images` - the path to the image you pushed to ACR
 
+      <br/>
       <details>
       <summary>💡 Tips and Tricks</summary>
       <ul>
@@ -49,13 +50,13 @@ Extend the .NET workflow you created in Challenge 1.4 to:
 
 3. Configure your workflow to deploy to your `test` and `prod` environments and after a manual approval for *each* environment.
 
-  <details>
-  <summary>💡 Tips and Tricks</summary>
-  <ul>
-  <li>It might be time to configure some<a href="https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#about-environments">environments</a>
-  </li>
-  </ul>
-  </details>
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+    <li>It might be time to configure some <a href="https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#about-environments">environments</a>
+    </li>
+    </ul>
+    </details>
 
 ## Success Criteria
 
