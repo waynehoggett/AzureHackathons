@@ -6,14 +6,12 @@
 
 In DevOps after we automate our build process, we want to automate our release process, we do this with a technique called Continuous Delivery (CD). Please take a moment to review this brief article talking about why this is important. 
 
-<br/>
-<details>
-<summary>📚 Additional Reading</summary>
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/what-is-continuous-delivery">What is Continuous Delivery?</a></li>
-</ul>
-</details>
-<br />
+  <details>
+  <summary>📚 Additional Reading</summary>
+  <ul>
+  <li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/what-is-continuous-delivery">What is Continuous Delivery?</a></li>
+  </ul>
+  </details>
 
 ## Objectives
 
@@ -38,6 +36,7 @@ Extend the .NET workflow you created in Challenge 1.4 to:
       - `app-name` - the name of the wep app instance to target
       - `images` - the path to the image you pushed to ACR
 
+      <details>
       <summary>💡 Tips and Tricks</summary>
       <ul>
       <li><a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#deploy-to-an-app-service-container">Deploy to an App Service container</a>
@@ -50,12 +49,13 @@ Extend the .NET workflow you created in Challenge 1.4 to:
 
 3. Configure your workflow to deploy to your `test` and `prod` environments and after a manual approval for *each* environment.
 
-      <summary>💡 Tips and Tricks</summary>
-      <ul>
-      <li>It might be time to configure some<a href="https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#about-environments">environments</a>
-      </li>
-      </ul>
-      </details>
+  <details>
+  <summary>💡 Tips and Tricks</summary>
+  <ul>
+  <li>It might be time to configure some<a href="https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#about-environments">environments</a>
+  </li>
+  </ul>
+  </details>
 
 ## Success Criteria
 
