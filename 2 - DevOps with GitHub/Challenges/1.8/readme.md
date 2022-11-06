@@ -16,7 +16,6 @@ To bring our DevOps journey full circle we need to understand what is happening 
 </details>
 <br/>
 
-
 ## Objectives
 
 In this challenge we will look at some of the telemetry that has already been collected by our running instance. We will also link Application Insights to Azure DevOps. This will allow us to open work items in Azure Boards directly from Application Insights, ensuring that there is full traceability between the issue that happened and all the technical information about it to the work item that was created to ask the dev team to fix it, to the code that fixed the issue, to the build and release that saw that fix get deployed. 
