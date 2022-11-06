@@ -49,20 +49,16 @@ In this challenge we will look at some of the telemetry that has already been co
 
 3. Implement an outside in availability test for the homepage of your site ([hint](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability))
 
-    <br>
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
     <li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability">Outside availability tests</a></li>
     </ul>
     </details>
-    <br>
 
 ### Success Criteria
 
 1. You should understand the importance of monitoring and some of the basic features offered by Application Insights.
-
-    - **NOTE**: We are just scratching the surface of what is offered in Azure Monitoring, if you are interested in learning more there is a full What the Hack focused on [Azure Monitoring](https://github.com/microsoft/WhatTheHack/tree/master/007-AzureMonitoring).
 
 [< Previous Challenge](../1.6/readme.md) | [Next Challenge >](../1.9/readme.md)
 
