@@ -8,27 +8,22 @@ In the previous steps, we successfully implemented an end-to-end CI/CD pipeline!
 
 With GitHub, we can solve these challenges using a practice called branching. Some may refer to this as the [GitHub flow](https://guides.github.com/introduction/flow/). When a developer wants to make a change, add a feature, or fix a bug, he or she begins by creating a new 'branch' or copy of the main codebase. Then, the developer makes changes and commits them. He or she creates a pull request to merge these changes back into the main branch. This pull request may or may not involve some testing or discussion. Finally, changes are merged back into the main codebase, and the branch can be deleted. 
 
-In this challenge, you will practice this flow. Additionally, GitHub offers a feature for explicitly protecting against changes directly to the main branch. These are called branch protection rules, and you will start by implementing one.
+In this challenge, you will practice this flow. Additionally, GitHub offers a feature for explicitly protecting against changes directly to the main branch. These are called **branch protection rules**, and you will start by implementing one.
 
-
-<br/>
-<details>
-<summary>📚 Additional Reading</summary>
-
-- General information about protected branches can be found [here](https://docs.github.com/en/github/administering-a-repository/about-protected-branches), with more configuration specifics [here](https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches).
-- General information about branches can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches), with more specifics about creation and deletion [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository).
-- General information about pull requests can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), with more specifics about [creating](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and [reviewing](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests).
-- [About code owners](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners)
-- [Enabling required status checks](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks)
-- [About required reviews for pull requests](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests)
-</details>
-<br />
+    <details>
+    <summary>📚 Additional Reading</summary>
+    - General information about protected branches can be found [here](https://docs.github.com/en/github/administering-a-repository/about-protected-branches), with more configuration specifics [here](https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches).
+    - General information about branches can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches), with more specifics about creation and deletion [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository).
+    - General information about pull requests can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), with more specifics about [creating](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and [reviewing](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests).
+    - [About code owners](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners)
+    - [Enabling required status checks](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks)
+    - [About required reviews for pull requests](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests)
+    </details>
 
 ## Objectives
 
 1. Create a branch protection rule which prevents developers from committing changes to the main branch in the repository.
 
-    <br/>
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
@@ -37,19 +32,25 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
     <ol>
     <li>In your repository, go to "Settings"</li>
     <li>Select "Branches" on the left hand side.</li>
-    <li>Select "Add Rule"</li>
+    <li>Select "Add branch protection rule"</li>
     <li>For branch pattern enter the default branch such as main or master</li>
     <li>Check "Require a pull request before merging" and select "Require review from Code Owners"</li>
     <li>Select "Create"</li>
     </ol>
     </ul>
     </details>
-    <br>
 
-2. Create a feature branch, make a small change to the code (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), and sync this branch with the GitHub repository.
+2. Create a feature branch, make a small change to the code ( e.g. `/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), publish your branch (if required) and sync this branch with the GitHub repository.
 
-3. Define a code owner for the `/Application` directory. Your branch policy should require a review from the code owner.
-    <br/>
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+    <li>Using Git source control in VSCode: <a href="https://code.visualstudio.com/docs/sourcecontrol/overview#_branches-and-tags">Branches and Tags</a></li>
+    </ul>
+    </details>
+
+3. Define a code owner for the `/Application` directory. Your branch policy should require a review from the code owner. 
+
     <details>
     <summary>💡 Tips and Tricks</summary>
     To define code owners:
@@ -60,19 +61,19 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
     <code>pull_request:    </code><br/>
     <code>branches: [ main ]</code><br/>
     <code>paths: Application/**</code><br/>
+    <li>Create your CODEOWNERS file directly in the main branch Github</li>
     </ul>
     </details>
-    <br>
 
 4. Create and complete a Pull Request, merging your code change into the protected branch.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-    <li>If using the git command line interface, you can find a number of sample git commands that are useful for branching<a href="https://gist.github.com/JamesMGreene/cdd0ac49f90c987e45ac">here</a>. Make sure to focus on the 'git' commands, rather than 'gitflow'.</li>
-    <li>Make sure to focus on the 'git' commands, rather than 'gitflow'.</li>
+    <li>You can create a Pull Request using github.com, go to <strong>Pull Requests</strong> and select <strong>New pull request</strong>, then select main as the base branch and select your feature branch as the compare branch</li>
+    <li>If using the git command line interface, you can find a number of sample git commands that are useful for branching <a href="https://gist.github.com/JamesMGreene/cdd0ac49f90c987e45ac">here</a></li>
+    <li>Make sure to focus on the 'git' commands, rather than 'gitflow'</li>
     </details>
-    <br>
 
 ### Success Criteria
 
