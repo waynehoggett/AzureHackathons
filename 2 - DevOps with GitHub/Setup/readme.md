@@ -1,21 +1,31 @@
 # Setup
 
-You need to complete Three (3) setup steps, make sure you complete all the required setup steps so you can hit the ground running on the day!
+You need to complete Three (4) setup steps, make sure you complete all the required setup steps so you can hit the ground running on the day!
 
-1. GitHub
-2. Software
-3. Azure
+1. Microsoft Account
+2. GitHub
+3. Software
+4. Azure
+
+## Microsoft Account
+
+You'll need a Microsoft Account, it's recommended you use a new Microsoft Account and use that new account to create your GitHub Account. Using a new account avoids issues with multiple tenants and potentially deploying resources to the wrong Azure tenant.
+
+You can register for a new Microsoft Account here:
+* [Create a Microsoft Account](https://signup.live.com/)
 
 ## GitHub
 
-You will need your own free GitHub Account, you can register here:
+You will need your own free GitHub Account. It's recommended you use a NEW account for the hackathon so any older settings that are non-default don't cause you issues.
+
+You can register for a Github Account here:
 * [Create a GitHub Account](https://github.com/signup)
 
 You'll also need a repository, you can create a repository once you have created your account, or, sign into GitHub and click the link below:
 
 [Create Repository](https://github.com/new)
 
-💡 Create a **🔖PUBLIC** repository for this hackathon so you can use all the features of GitHub.
+💡 IMPORTANT: Create a **🔖PUBLIC** repository for this hackathon so you can use all the features of GitHub.
 
 ## Software
 
@@ -37,6 +47,9 @@ Here are the instructions for your Operating System:
 
 ## Azure
 
-Use the Microsoft Account you used to register for the hackathon to login to Azure, and create a Resource Group that will be used to deploy your resources to, use a unique name, e.g. RG-<YourName>
+Use the Microsoft Account to login to Azure, and create a Resource Group that will be used to deploy your resources to, use a unique name, e.g. RG-<YourName>
 
-Note: You can use any region for your resource group, but stick to the "Recommended" regions.
+Note: You can use any region for your resource group, but stick to the Recommended regions, as displayed in the portal.
+  
+* [How to create a resource group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
+ * 
