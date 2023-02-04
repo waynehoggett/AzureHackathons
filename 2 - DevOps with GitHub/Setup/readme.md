@@ -23,7 +23,7 @@ You can register for a Github Account here:
 
 You'll also need a repository, you can create a repository once you have created your account, or, sign into GitHub and click the link below:
 
-[Create Repository](https://github.com/new)
+* [Create a Repository](https://github.com/new)
 
 💡 IMPORTANT: Create a **🔖PUBLIC** repository for this hackathon so you can use all the features of GitHub.
 
