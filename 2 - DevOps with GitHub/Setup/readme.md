@@ -1,11 +1,12 @@
 # Setup
 
-You need to complete Three (4) setup steps, make sure you complete all the required setup steps so you can hit the ground running on the day!
+Use the below checklist to make sure you'r ready for the Hackathon. Make sure you complete all the required setup steps so you can hit the ground running on the day!
 
 1. [Microsoft Account](https://github.com/waynehoggett/AzureHackathons/blob/main/2%20-%20DevOps%20with%20GitHub/Setup/readme.md#microsoft-account)
 2. [GitHub](https://github.com/waynehoggett/AzureHackathons/blob/main/2%20-%20DevOps%20with%20GitHub/Setup/readme.md#github)
 3. [Software](https://github.com/waynehoggett/AzureHackathons/blob/main/2%20-%20DevOps%20with%20GitHub/Setup/readme.md#software)
-4. [Azure](https://github.com/waynehoggett/AzureHackathons/blob/main/2%20-%20DevOps%20with%20GitHub/Setup/readme.md#software)
+4. [Accept Invite]()
+5. [Azure](https://github.com/waynehoggett/AzureHackathons/blob/main/2%20-%20DevOps%20with%20GitHub/Setup/readme.md#software)
 
 ## Microsoft Account
 
@@ -13,6 +14,12 @@ You'll need a Microsoft Account, it's recommended you use a new Microsoft Accoun
 
 You can register for a new Microsoft Account here:
 * [Create a Microsoft Account](https://signup.live.com/)
+
+## Accept  Invite
+
+Sent the email address of your Microsoft Account to the organizers. The organizers will invite you to the Azure Tenant used by the Hackathon. You will receive an invitation email (shown below). Accept the invitation before continuing.
+
+<img src="/invite.png" alt="Microsoft Account Invitation Email" height="400px" />
 
 ## GitHub
 
