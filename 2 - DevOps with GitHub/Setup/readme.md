@@ -19,7 +19,7 @@ You can register for a new Microsoft Account here:
 
 Sent the email address of your Microsoft Account to the organizers. The organizers will invite you to the Azure Tenant used by the Hackathon. You will receive an invitation email (shown below). Accept the invitation before continuing.
 
-<img src="/invite.png" alt="Microsoft Account Invitation Email" height="400px" />
+<img src="../invite.png" alt="Microsoft Account Invitation Email" height="400px" />
 
 ## GitHub
 
