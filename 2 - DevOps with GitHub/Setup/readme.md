@@ -52,4 +52,3 @@ Use the Microsoft Account to login to Azure, and create a Resource Group that wi
 Note: You can use any region for your resource group, but stick to the Recommended regions, as displayed in the portal.
   
 * [How to create a resource group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
- * 
