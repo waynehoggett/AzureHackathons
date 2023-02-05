@@ -105,7 +105,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     </ul>
     </details>
 
-5. Review the project board and ensure your issues automatically appear under the**To do** column.
+5. Review the project board and ensure your issues automatically appear under the **To do** column.
 
 6. Since you are currently working on Challenge 1, drag the **Challenge 1** card from the **To do** column to **In progress**.
 
