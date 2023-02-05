@@ -55,8 +55,7 @@ Now that we have a basic understanding of version control and Git, lets get some
     </details>
 
     <details>
-    <summary>📚 Additional Reading</summary>
-    To 
+    <summary>📚 Additional Reading</summary> 
     <ul>
     <li>If working with the command line, check out these articles on <a href="https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits">committing</a> and <a href="https://docs.github.com/en/github/using-git/pushing-commits-to-a-remote-repository">pushing</a> changes.</li>
     </ul>
