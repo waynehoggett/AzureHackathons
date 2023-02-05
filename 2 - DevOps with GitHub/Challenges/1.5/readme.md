@@ -4,9 +4,9 @@
 
 ## Overview
 
-Now, we need to extend our workflow with steps to build a docker image and push it to Azure Container Registry (ACR). In the NEXT challenge, we will configure the Web App to pull the image from ACR. The three key steps to build and push a container image to a container registry are:
+Containers are a great way to package and deploy applications consistently across environments. If you are new to containers, there are 3 key steps to creating and publishing an image - outlined below. Because this is a hackathon focused on DevOps and not containers, we've strived to make this challenge as straightforward as possible.
 
-Containers are a great way to package and deploy applications consistently across environments. If you are new to containers, there are 3 key steps to creating and publishing an image - outlined below. Because this is a What The Hack focused on DevOps and not containers, we've strived to make this challenge as straightforward as possible.
+Now, we need to extend our workflow with steps to build a docker image and push it to Azure Container Registry (ACR). In the NEXT challenge, we will configure the Web App to pull the image from ACR. The three key steps to build and push a container image to a container registry are:
 
 1. `docker login` - you need to login to the container registry that you will push your image to. As you can imagine, you don't want anyone to publish an image in your registry, so it is often setup as a private registry...requiring authentication to push and pull images.
 
