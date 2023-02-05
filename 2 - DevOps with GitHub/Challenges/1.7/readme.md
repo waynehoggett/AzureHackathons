@@ -12,12 +12,14 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
 
 <details>
 <summary>📚 Additional Reading</summary>
+<ul>
 <li>General information about protected branches can be found <a href="https://docs.github.com/en/github/administering-a-repository/about-protected-branches">here</a>, with more configuration specifics <a href="https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches">here</a>.</li>
 <li>General information about branches can be found <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches">here</a>, with more specifics about creation and deletion <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository">here</a>.</li>
 <li>General information about pull requests can be found <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">here</a>, with more specifics about <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">creating</a> and <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests">reviewing</a>.</li>
 <li><a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners">About code owners</a></li>
 <li><a href="https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks">Enabling required status checks</a></li>
 <li><a href="https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests">About required reviews for pull requests</a></li>
+    </ul>
 </details>
 
 ## Objectives
