@@ -31,6 +31,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     <details>
     <summary>💡 Tips and Tricks</summary>
     Issues should be enabled by default, but you can check in the ⚙️ settings for your repository.
+    On the *General* tab, check the *Features* heading
     </details>
 
 
