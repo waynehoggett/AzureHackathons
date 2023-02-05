@@ -74,7 +74,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     To edit workflows:
     <ul>
     <li>In your project, select the ellipsis <code>...</code> and select <strong>Workflows</strong></li>
-    <li>In the default workflows list, select <strong>Item added to project</strong> and set the status to <strong>On</strong></li>
+    <li>In the default workflows list, select <strong>Item added to project</strong> edit and save the workflow to and if required, set the status to <strong>On</strong></li>
     </ul>
     </details>
 
