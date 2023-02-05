@@ -57,7 +57,11 @@ Here are the instructions for your Operating System:
 ## Azure
 
 Use the Microsoft Account to login to Azure, and create a Resource Group that will be used to deploy your resources to, use a unique name, e.g. RG-<YourName>
+  
+1. Go to the [Azure Portal](https://portal.azure.com)
+2. Log in with the Microsoft Account that has accepted the invitation
+3. Make sure you have the correct tenant selected, and Change Directory if required
+> <img src="../Setup/directory.png" alt="Directory" />
+4. [Create a Resource Group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) for your Azure Resources
 
 Note: You can use any region for your resource group, but stick to the Recommended regions, as displayed in the portal.
-  
-* [How to create a resource group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
