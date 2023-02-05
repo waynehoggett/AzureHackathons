@@ -87,7 +87,7 @@ In this challenge, you will build and test the .NET Core application.
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-      <li>To add a comment, you could edit, Index.cshtml in /src/RazorPagesTestSample/pages and add a comment like <code><!-- Test Comment --></code> to line 6.</li>
+      <li>To add a comment, you could edit, Index.cshtml in /src/RazorPagesTestSample/pages and add a comment like <code>&lt;!-- Test Comment --&gt;</code> to line 6.</li>
     </ul>
     </details>
 
