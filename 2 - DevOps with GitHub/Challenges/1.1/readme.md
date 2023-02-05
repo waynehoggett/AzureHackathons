@@ -94,16 +94,16 @@ To help you with Agile project management, there is [GitHub projects](https://do
     - Assign an owner for each issue. Assign the `Challenge 1` work item to another member of your team, have them assign their `Challenge 1` work item to you. Assign all remaining challenges to yourself.
     - Associate each issue with the project board you just created 
 
-<details>
-<summary>💡 Tips and Tricks</summary>
-To create issues:
-<ul>
-<li>In your repository, select <strong>Issues</strong> </li>
-<li>Select <strong>New Issue</strong></li>
-<li>Create the issue for each challenge. Make sure you link the issue to the project on the right hand side before creating.</li>
-<li> New issues if linked properly should show up in the <strong>To do</strong> column. Once you set to closed, it should move to <strong>Done</strong> column. If you are viewing the </li>
-</ul>
-</details>
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    To create issues:
+    <ul>
+    <li>In your repository, select <strong>Issues</strong> </li>
+    <li>Select <strong>New Issue</strong></li>
+    <li>Create the issue for each challenge. Make sure you link the issue to the project on the right hand side before creating.</li>
+    <li> New issues if linked properly should show up in the <strong>To do</strong> column. Once you set to closed, it should move to <strong>Done</strong> column. If you are viewing the </li>
+    </ul>
+    </details>
 
 5. Review the project board and ensure your issues automatically appear under the**To do** column.
 
