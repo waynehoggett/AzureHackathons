@@ -39,7 +39,7 @@ We will use GitHub Actions to automate the deployment of our Azure infrastructur
     </ul>
     </details>
 
-🗈 NOTE: The `webAppName` parameter on line #6 - you will override this placeholder value later when you call the ARM template.
+📝 NOTE: The `webAppName` parameter on line #6 - you will override this placeholder value later when you call the ARM template.
 
 3. Create a GitHub workflow (`deploy.yml`) that runs manually (*not* triggered by a push or pull request).
 
