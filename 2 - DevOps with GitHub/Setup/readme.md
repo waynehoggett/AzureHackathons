@@ -51,7 +51,7 @@ Here are the instructions for your Operating System:
 ## Download and Install Git
 * [Git SCM](https://git-scm.com/download)
 
-## Download and Install GitHub Desktop
+## (Optional) Download and Install GitHub Desktop
 * [GitHub Desktop](https://desktop.github.com/)
 
 ## Azure
