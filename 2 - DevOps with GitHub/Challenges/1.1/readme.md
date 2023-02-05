@@ -57,13 +57,13 @@ To help you with Agile project management, there is [GitHub projects](https://do
     <summary>💡 Tips and Tricks</summary>
     To create a project board:
     <ul>
-    <li>In your repository, select <strong>Projects</strong></li>
-    <li>Select the drop-down arrow next to <strong>Link a Project</strong> and select <strong>New Project</strong></li>
-    <li>You may need to navigate to your profile</li>
+    <li>Navigate to your profile</li>
     <li>Select <strong>New Project</strong></li>
     <li>Select the <strong>Board</strong> option under <strong>Start from scratch</strong></li>
-    <li>Select Create</li>
     <li>Optionally change the name of your project</li>
+    <li>Select Create</li>
+    <li>In your repository, select <strong>Projects</strong></li>
+    <li>Select <strong>Link a Project</strong> and select your project</li>
     </ul>
     </details>
 
