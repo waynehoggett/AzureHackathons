@@ -80,7 +80,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
 
     <details>
     <summary>💡 Tips and Tricks</summary>
-    To create a project board:
+    To link your project to the repository:
     <ul>
     <li>In your repository, select <strong>Projects</strong></li>
     <li>In your repository, select <strong>Add project</strong></li>
