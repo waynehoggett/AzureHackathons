@@ -21,6 +21,8 @@ Sent the email address of your Microsoft Account to the organizers. The organize
 
 <img src="../Setup/invite.png" alt="Microsoft Account Invitation Email" height="400px" />
 
+After accepting the invite, you will be taken to `myapplications.microsoft.com`, you can close that tab, you'll access the Azure Portal using  `portal.azure.com`.
+
 ## GitHub
 
 You will need your own free GitHub Account. It's recommended you use a NEW account for the hackathon so any older settings that are non-default don't cause you issues.
