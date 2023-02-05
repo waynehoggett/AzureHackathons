@@ -95,7 +95,7 @@ on:
     paths: Application/**
     
 env:
-  registryName: whack1devopsreg.azurecr.io
+  registryName: <registryName>.azurecr.io
   repositoryName: wth/dotnetcoreapp
   dockerFolderPath: Application/src/RazorPagesTestSample
   tag: ${{ github.run_number }}
