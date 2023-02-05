@@ -23,11 +23,11 @@ Now that we have some code, we need an environment to deploy it to! The term Inf
 
 We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group, App Service Plan, Application Insights instance, and Azure Container Registry. 
 
-🗈 NOTE: In real deployments, all your environments will likely not share these resources.
+📝 NOTE: In real deployments, all your environments will likely not share these resources.
 
 1. Review the ARM template. Notice how it defines a number of parameters and uses them to create the Resource Group, App Service Plan, Web App, Application Insights, and Azure Container Registry. 
 
-2. Update the parameters section of the ARM template, replacing all instances of `<prefix>` with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources. 
+2. Using Visual Studio Code, update the parameters section of the ARM template, replacing all instances of `<prefix>` with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources. 
 
     <details>
     <summary>💡 Tips and Tricks</summary>
