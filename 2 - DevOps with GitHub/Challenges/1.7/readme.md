@@ -63,7 +63,7 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
     <code>pull_request:    </code><br/>
     <code>branches: [ main ]</code><br/>
     <code>paths: Application/**</code><br/>
-    <li>Create your CODEOWNERS file directly in the main branch Github</li>
+    <li>To prevent issues, create your CODEOWNERS file directly in the main branch on Github</li>
     </ul>
     </details>
 
