@@ -51,15 +51,16 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
     </ul>
     </details>
 
-3. Define a code owner for the `/Application` directory. Your branch policy should require a review from the code owner. 
+3. Define a code owner (or more than one) for the `/Application` directory. Your branch policy should require a review from the code owner. 
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     To define code owners:
     <ul>
     <li>A new file at the root of the repo is needed called "CODEOWNERS", you will need to define the path and the owner:</li>
-    <code>/Application/ @waynehoggett</code><br/>
-    <li>The following is needed to run during the pull request and only for the application path:</li>
+    <code>/Application/ @waynehoggett</code>, or<br/>
+    <code>/Application/ @waynehoggett @myaccount</code><br/>
+    <li>The following is needed to run during the pull request and only for the application path (this should already be in place):</li>
     <code>pull_request:    </code><br/>
     <code>branches: [ main ]</code><br/>
     <code>paths: Application/**</code><br/>
@@ -67,7 +68,7 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
     </ul>
     </details>
 
-4. Create and complete a Pull Request, merging your code change into the protected branch.
+4. Create and complete a Pull Request, merging your code change into the protected branch, ask the other code owner to approve your changes.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
