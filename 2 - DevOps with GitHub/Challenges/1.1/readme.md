@@ -26,7 +26,9 @@ To help you with Agile project management, there is [GitHub projects](https://do
 
 ## Objectives
 
-1. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. 
+1. Partner up with someone and ask them for their GitHub email address. DevOps is about teamwork! You'll invite them to collaborate with you using their email address.
+
+2. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. 
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -35,7 +37,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     </details>
 
 
-2. Add collaborators from your team to your repo. 
+3. Add collaborators from your team to your repo. 
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -49,7 +51,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     </ul>
     </details>
 
-3. Create a project board.
+4. Create a project board.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -65,7 +67,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     </ul>
     </details>
 
-4. Enable the **Item added to project** workflow.
+5. Enable the **Item added to project** workflow.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -76,7 +78,7 @@ To help you with Agile project management, there is [GitHub projects](https://do
     </ul>
     </details>
 
-5. Add the **Project** to the **Repository**.
+6. Add the **Project** to the **Repository**.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
