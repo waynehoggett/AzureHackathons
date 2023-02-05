@@ -47,7 +47,7 @@ In this challenge we will look at some of the telemetry that has already been co
     </ol>
     </details>
 
-3. Implement an outside in availability test for the homepage of your site ([hint](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability))
+3. Implement an outside in availability test for the homepage of your site.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
