@@ -72,5 +72,5 @@ In this challenge, you will improve the security of your repository using some o
 - Finally, you should be able to view the results of the CodeQL Analysis in the Security tab. 
 
 
-[< Previous Challenge](../1.8/readme.md) | [Home](../readme.md)
+[< Previous Challenge](../1.8/readme.md) | [Home]([../readme.md](https://github.com/waynehoggett/AzureHackathons/tree/main/2%20-%20DevOps%20with%20GitHub))
 
