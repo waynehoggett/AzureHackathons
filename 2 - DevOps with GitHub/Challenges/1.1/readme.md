@@ -26,15 +26,18 @@ To help you with Agile project management, there is [GitHub projects](https://do
 
 ## Objectives
 
-1. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. 
+1. Partner up with someone and ask them for their GitHub email address. DevOps is about teamwork! You'll invite them to collaborate with you using their email address.
+
+2. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. 
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     Issues should be enabled by default, but you can check in the ⚙️ settings for your repository.
+    On the *General* tab, check the *Features* heading
     </details>
 
 
-2. Add collaborators from your team to your repo. 
+3. Add collaborators from your team to your repo. 
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -48,38 +51,36 @@ To help you with Agile project management, there is [GitHub projects](https://do
     </ul>
     </details>
 
-3. Create a project board.
+4. Create a project board.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     To create a project board:
     <ul>
-    <li>In your repository, select <strong>Projects</strong></li>
-    <li>Select <strong>Add Project</strong></li>
-    <li>You may need to navigate to your profile</li>
+    <li>Navigate to your profile</li>
     <li>Select <strong>New Project</strong></li>
     <li>Select the <strong>Board</strong> option under <strong>Start from scratch</strong></li>
-    <li>Select Create</li>
     <li>Optionally change the name of your project</li>
+    <li>Select Create</li>
     </ul>
     </details>
 
-4. Enable the **Item added to project** workflow.
+5. Enable the **Item added to project** workflow.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     To edit workflows:
     <ul>
     <li>In your project, select the ellipsis <code>...</code> and select <strong>Workflows</strong></li>
-    <li>In the default workflows list, select <strong>Item added to project</strong> and set the status to <strong>On</strong></li>
+    <li>In the default workflows list, select <strong>Item added to project</strong> edit and save the workflow to and if required, set the status to <strong>On</strong></li>
     </ul>
     </details>
 
-5. Add the **Project** to the **Repository**.
+6. Add the **Project** to the **Repository**.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
-    To create a project board:
+    To link your project to the repository:
     <ul>
     <li>In your repository, select <strong>Projects</strong></li>
     <li>In your repository, select <strong>Add project</strong></li>
@@ -93,18 +94,18 @@ To help you with Agile project management, there is [GitHub projects](https://do
     - Assign an owner for each issue. Assign the `Challenge 1` work item to another member of your team, have them assign their `Challenge 1` work item to you. Assign all remaining challenges to yourself.
     - Associate each issue with the project board you just created 
 
-<details>
-<summary>💡 Tips and Tricks</summary>
-To create issues:
-<ul>
-<li>In your repository, select <strong>Issues</strong> </li>
-<li>Select <strong>New Issue</strong></li>
-<li>Create the issue for each challenge. Make sure you link the issue to the project on the right hand side before creating.</li>
-<li> New issues if linked properly should show up in the <strong>To do</strong> column. Once you set to closed, it should move to <strong>Done</strong> column. If you are viewing the </li>
-</ul>
-</details>
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    To create issues:
+    <ul>
+    <li>In your repository, select <strong>Issues</strong> </li>
+    <li>Select <strong>New Issue</strong></li>
+    <li>Create the issue for each challenge. Make sure you link the issue to the project on the right hand side before creating.</li>
+    <li> New issues if linked properly should show up in the <strong>To do</strong> column. Once you set to closed, it should move to <strong>Done</strong> column. If you are viewing the </li>
+    </ul>
+    </details>
 
-5. Review the project board and ensure your issues automatically appear under the**To do** column.
+5. Review the project board and ensure your issues automatically appear under the **To do** column.
 
 6. Since you are currently working on Challenge 1, drag the **Challenge 1** card from the **To do** column to **In progress**.
 

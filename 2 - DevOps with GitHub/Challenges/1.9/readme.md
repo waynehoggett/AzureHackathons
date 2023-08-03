@@ -35,7 +35,6 @@ In this challenge, you will improve the security of your repository using some o
         <li>If you are stuck, check out the 'Security' tab of your repository on GitHub.</li>
     </ul>
     </details>
-    <br>
 
 2. Enable Dependabot alerts for the repository. Dependabot is an automated tool that creates a pull request when any dependencies in the code base has a known vulnerability. 
 
@@ -48,7 +47,6 @@ In this challenge, you will improve the security of your repository using some o
     <li>Select "Enable" on "Dependabot alerts" and "Dependabot security updates"</li>
     </ol>
     </details>
-    <br>
 
 3. Finally, set up and run a Code scanning workflow for the repository using GitHub's 'CodeQL Analysis.' This workflow can run either on each pull request or on a schedule, and it checks your code for common vulnerabilities or errors. 
 
@@ -63,7 +61,6 @@ In this challenge, you will improve the security of your repository using some o
     <li>It will give you a default template which you can modify</a></li>
     </ol>
     </details>
-    <br>
 
 ## Success Criteria
 
@@ -72,5 +69,5 @@ In this challenge, you will improve the security of your repository using some o
 - Finally, you should be able to view the results of the CodeQL Analysis in the Security tab. 
 
 
-[< Previous Challenge](../1.8/readme.md) | [Home](../readme.md)
+[< Previous Challenge](../1.8/readme.md) | [Home](https://github.com/waynehoggett/AzureHackathons/tree/main/2%20-%20DevOps%20with%20GitHub)
 

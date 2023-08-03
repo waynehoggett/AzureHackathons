@@ -23,11 +23,11 @@ Now that we have some code, we need an environment to deploy it to! The term Inf
 
 We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group, App Service Plan, Application Insights instance, and Azure Container Registry. 
 
-🗈 NOTE: In real deployments, all your environments will likely not share these resources.
+📝 NOTE: In real deployments, all your environments will likely not share these resources.
 
 1. Review the ARM template. Notice how it defines a number of parameters and uses them to create the Resource Group, App Service Plan, Web App, Application Insights, and Azure Container Registry. 
 
-2. Update the parameters section of the ARM template, replacing all instances of `<prefix>` with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources. 
+2. Using Visual Studio Code, update the parameters section of the ARM template, replacing all instances of `<prefix>` with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources. 
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -39,7 +39,7 @@ We will use GitHub Actions to automate the deployment of our Azure infrastructur
     </ul>
     </details>
 
-🗈 NOTE: The `webAppName` parameter on line #6 - you will override this placeholder value later when you call the ARM template.
+📝 NOTE: The `webAppName` parameter on line #6 - you will override this placeholder value later when you call the ARM template.
 
 3. Create a GitHub workflow (`deploy.yml`) that runs manually (*not* triggered by a push or pull request).
 
@@ -74,7 +74,7 @@ We will use GitHub Actions to automate the deployment of our Azure infrastructur
         <li>Select the action and select the latest version to see the code snippet</li>
         <li>You can review the snippet, but for your purposes you can keep it simple, and just include two lines immediately after <code>    steps:</code> in your YAML file:
         <code>- name: Checkout</code><br/>
-        <code>  uses: actions/checkout@v2.5.0</code></br/>
+        <code>  uses: actions/checkout@v3.3.0</code></br/>
         <ol>
         </details>
 
@@ -87,7 +87,7 @@ We will use GitHub Actions to automate the deployment of our Azure infrastructur
         <li>Select the action and select the latest version to see the code snippet</li>
         <li>Copy the code and add the content under <code>steps:</code></li>
         <br/>
-          🗈 NOTE: Indentation is important in YAML, intellisense will likely red underline text that is not indented correctly. If required, use tab to indent all the text you've added.
+          📝 NOTE: Indentation is important in YAML, intellisense will likely red underline text that is not indented correctly. If required, use tab to indent all the text you've added.
         <br/>
 
         <li>See the documentation for the Azure Login action by selecting the <a href="https://github.com/marketplace/actions/azure-login#github-actions-for-deploying-to-azure"><strong>View full Marketplace listing</strong></a> link</li>

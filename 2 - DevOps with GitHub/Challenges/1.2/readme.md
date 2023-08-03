@@ -47,6 +47,7 @@ Now that we have a basic understanding of version control and Git, lets get some
     <summary>💡 Tips and Tricks</summary>
     Committing Files 
     <ul>
+    <li>Make sure you are in the directory that was created when you cloned your repository</li>
     <li>In the command line enter: <code>git add --all</code> - This will add all of the files you just copied to the folder to be be tracked.</li>
     <li>Now we need to commit our changes by typing <code>git commit -am "My first commit"</code></li>
     <li>Finally we need to push to the remote repository in github by doing <code>git push -u</code>. You may see a warning which will provide the full command if this is the first time you are doing this to target the github server.</li>
@@ -54,8 +55,7 @@ Now that we have a basic understanding of version control and Git, lets get some
     </details>
 
     <details>
-    <summary>📚 Additional Reading</summary>
-    To 
+    <summary>📚 Additional Reading</summary> 
     <ul>
     <li>If working with the command line, check out these articles on <a href="https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits">committing</a> and <a href="https://docs.github.com/en/github/using-git/pushing-commits-to-a-remote-repository">pushing</a> changes.</li>
     </ul>

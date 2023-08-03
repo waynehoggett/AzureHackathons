@@ -12,12 +12,14 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
 
 <details>
 <summary>📚 Additional Reading</summary>
-- General information about protected branches can be found [here](https://docs.github.com/en/github/administering-a-repository/about-protected-branches), with more configuration specifics [here](https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches).
-- General information about branches can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches), with more specifics about creation and deletion [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository).
-- General information about pull requests can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), with more specifics about [creating](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and [reviewing](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests).
-- [About code owners](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners)
-- [Enabling required status checks](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks)
-- [About required reviews for pull requests](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests)
+<ul>
+<li>General information about protected branches can be found <a href="https://docs.github.com/en/github/administering-a-repository/about-protected-branches">here</a>, with more configuration specifics <a href="https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches">here</a>.</li>
+<li>General information about branches can be found <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches">here</a>, with more specifics about creation and deletion <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository">here</a>.</li>
+<li>General information about pull requests can be found <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">here</a>, with more specifics about <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">creating</a> and <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests">reviewing</a>.</li>
+<li><a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners">About code owners</a></li>
+<li><a href="https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks">Enabling required status checks</a></li>
+<li><a href="https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests">About required reviews for pull requests</a></li>
+    </ul>
 </details>
 
 ## Objectives
@@ -49,23 +51,24 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
     </ul>
     </details>
 
-3. Define a code owner for the `/Application` directory. Your branch policy should require a review from the code owner. 
+3. Define a code owner (or more than one) for the `/Application` directory. Your branch policy should require a review from the code owner. 
 
     <details>
     <summary>💡 Tips and Tricks</summary>
     To define code owners:
     <ul>
     <li>A new file at the root of the repo is needed called "CODEOWNERS", you will need to define the path and the owner:</li>
-    <code>/Application/ @waynehoggett</code><br/>
-    <li>The following is needed to run during the pull request and only for the application path:</li>
+    <code>/Application/ @waynehoggett</code>, or<br/>
+    <code>/Application/ @waynehoggett @myaccount</code><br/>
+    <li>The following is needed to run during the pull request and only for the application path (this should already be in place):</li>
     <code>pull_request:    </code><br/>
     <code>branches: [ main ]</code><br/>
     <code>paths: Application/**</code><br/>
-    <li>Create your CODEOWNERS file directly in the main branch Github</li>
+    <li>To prevent issues, create your CODEOWNERS file directly in the main branch on Github</li>
     </ul>
     </details>
 
-4. Create and complete a Pull Request, merging your code change into the protected branch.
+4. Create and complete a Pull Request, merging your code change into the protected branch, ask the other code owner to approve your changes.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
