@@ -28,7 +28,7 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
 
     - Visual Studio Code
     - Docker Desktop
-<br />
+    <ul>
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
@@ -38,6 +38,7 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
     <li>⚠️ Make sure you log out and log back in after installing Docker Desktop</li>
     </ul>
     </details>
+    </ul>
 
 ## Success Criteria
 
