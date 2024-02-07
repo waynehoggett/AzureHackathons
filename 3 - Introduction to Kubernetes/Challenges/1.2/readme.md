@@ -25,7 +25,6 @@ The docker hub is the default registry used Docker desktop.
         <li>You can switch to Linux Containers by right-clicking on the Docker Desktop icon in the system tray (which may be hidden) and select "Switch to Linux containers".</li>
         </ul>
         </details>
-        <br>
 
 2.  **Pull an existing container image from the Docker Hub container registry, using the below command:**
 
@@ -44,7 +43,6 @@ The docker hub is the default registry used Docker desktop.
      </li>
      </ul>
      </details>
-     <br>
 
 3.  **Run your first container, using the below command:**
 
@@ -63,7 +61,6 @@ The docker hub is the default registry used Docker desktop.
      </li>
      </ul>
      </details>
-     <br>
 
 4.  **View your running containerized app**
 
@@ -78,7 +75,6 @@ The docker hub is the default registry used Docker desktop.
     </li>You can stop a running container with the command:<code>docker container stop <container id></code></li>
     </li>Or you can force remove the container with: <code>docker container remove --force <container id></code></li>
     </details>
-    <br>
 
 ## Success Criteria
 
