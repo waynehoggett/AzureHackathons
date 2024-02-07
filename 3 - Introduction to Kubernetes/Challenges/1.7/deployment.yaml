@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: myapp-deploymnet
+   namespace: default
+spec:
+   replicas: 1
+   selector:
+      matchLabels:
+         mycontainerapp: web
+   template:
+      metadata:
+         labels:
+            mycontainerapp: web
+      spec:
+         containers:
+            - name: mycontainerapp
+              image: mycontainerapp:latest
+              imagePullPolicy: IfNotPresent

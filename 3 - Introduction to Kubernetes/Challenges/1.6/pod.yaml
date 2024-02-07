@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  containers:
+  - name: mycontainerapp
+    image: mycontainerapp:latest
+    imagePullPolicy: IfNotPresent

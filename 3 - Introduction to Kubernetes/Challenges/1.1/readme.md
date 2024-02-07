@@ -1,36 +1,61 @@
 # Challenge 1.1 - Workstation Setup
 
-## Before you begin
-
-* Check out the detailed setup guide [here](#TODO)
-
 ## Overview
 
-A smart Cloud Native DevOps Engineer knows what tools he needs, how to install them and how to use them. Get started with this hackathon by preparing your toolkit.
+A smart Cloud Native DevOps or Platform Engineer knows what tools he needs, how to install them and how to use them. Get started with this hackathon by preparing your toolkit.
 
-<details>
-<summary>📚 Additional Reading</summary>
-<ul>
-<li><a href="Link URL">Link Title</a></li>
-</ul>
-</details>
-<br />
-  
+Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable cloud-native cloud development on Windows.
 
 ## Objectives
 
-1. 
+1.  **Install Windows Subsystem for Linux**
+
     <details>
-    <summary>💡</summary>
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+    <li>With the latest version of Windows 11, you can install Windows Subsystem for Linux with a single command <code>wsl --install</code>
+    </li>
+    </ul>
     </details>
+    <br>
+
+2.  **Complete WSL post-setup:**
+
+    - Restart your Virtual Machine if required
+
+    - Use the same username and password for WSL/Ubuntu as you are using for Windows
+
+3.  **Install required software**
+
+    - Visual Studio Code
+    - Docker Desktop
+
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+    <li>You can install apps on Windows 11 with winget using a single command<br/>
+    <code>winget install --id=Microsoft.VisualStudioCode --accept-source-agreements</code><br/><code>winget install --id=Docker.DockerDesktop --accept-source-agreements</code></a>
+    </li>
+    <li>⚠️ Make sure you log out and log back in after installing Docker Desktop</li>
+    </ul>
+    </details>
+    <br>
 
 ## Success Criteria
 
-- You have added one or more collaborators to your repo
-- You have a project board, associated it with your repository
-- You have created 9 issues (8 open, 1 closed by a team member)
-- New issues automatically appear under the "To do" column
-- Closed issues automatically appear under the "Done" column
+- Required software is installed and ready for use:
+  - Windows Subsystem for Linux
+  - Docker Desktop
+  - Visual Studio Code
+
+<details>
+<summary>📚 Additional Reading (Optional)</summary>
+<ul>
+<li><a href="https://learn.microsoft.com/windows/wsl/about">What is the Windows Subsystem for Linux?</a></li>
+<li><a href="https://docs.docker.com/desktop/">Overview of Docker Desktop</a></li>
+<li><a href="https://learn.microsoft.com/windows/package-manager/">Windows Package Manager</a></li>
+</ul>
+</details>
+<br />
 
 [Next Challenge >](../1.2/readme.md)
-

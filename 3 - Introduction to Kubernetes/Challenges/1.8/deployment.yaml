@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: myapp-deployment
+   namespace: default
+spec:
+   replicas: 1
+   selector:
+      matchLabels:
+         mycontainerapp: web
+   template:
+      metadata:
+         labels:
+            mycontainerapp: web
+      spec:
+         containers:
+            - name: mycontainerapp
+              image: mycontainerapp:latest
+              imagePullPolicy: IfNotPresent
+---
+apiVersion: v1
+kind: Service
+metadata:
+   name: myapp-entrypoint
+   namespace: default
+spec:
+   type: NodePort
+   selector:
+      mycontainerapp: web
+   ports:
+      - port: 8080
+        targetPort: 80
+        nodePort: 30000
