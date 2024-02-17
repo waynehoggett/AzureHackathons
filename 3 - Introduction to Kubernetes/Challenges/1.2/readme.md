@@ -8,27 +8,28 @@
 
 Container images are grouped in a registry into one or more **repositories**. The images are then pulled from the registry before being run.
 
-In this challenge you will pull an existing container image from the docker Docker Hub container registry and run it locally.
+In this challenge you will pull an existing container image from the Docker Hub container public registry and run it locally.
 
-The docker hub is the default registry used Docker desktop.
+Docker hub is the default registry used Docker desktop.
 
 ## Objectives
 
-1.  **Start Docker Desktop and switch to Linux Containers.**
+1.  **Start Docker Desktop and switch to Linux containers (if required).**
 
     <details>
         <summary>💡 Tips and Tricks</summary>
         <ul>
         <li>⚠️ Make sure you log out and log back in after installing Docker Desktop</li>
-        <li>If Docker Desktop doesn't start automatically, you can start Docker Desktop from the Start Menu, or run <code></code></li>
+        <li>If Docker Desktop doesn't start automatically, you can start Docker Desktop from the Start Menu, or run: <code>"C:\Program Files\Docker\Docker\Docker Desktop.exe"</code></li>
         <li>You don't need a docker account for this hackathon, you can <em>continue without signing in.</em></li>
-        <li>You can switch to Linux Containers by right-clicking on the Docker Desktop icon in the system tray (which may be hidden) and select "Switch to Linux containers".</li>
+        <li>You can switch to Linux Containers by right-clicking on the Docker Desktop icon in the system tray (which may be hidden) and select "Switch to Linux containers". If "Switch to Windows Containers" is displayed in the menu, you're already using Linux containers.</li>
         </ul>
         </details>
 
 2.  **Pull an existing container image from the Docker Hub container registry, using the below command:**
 
-    <code>docker pull docker/welcome-to-docker</code>
+    - In the terminal, run:
+      <code>docker pull docker/welcome-to-docker</code>
 
     <details>
      <summary>💡 Tips and Tricks</summary>
@@ -51,6 +52,7 @@ The docker hub is the default registry used Docker desktop.
     <details>
      <summary>💡 Tips and Tricks</summary>
      <ul>
+     <li>If prompted, allow Docker to access public and private networks through Defender Firewall.</li>
      <li>The <code>docker pull</code> command pulls container images from a registry. If you don't specify a registry, the Docker Hub is used. 
      </li>
     <li><code>docker pull</code> command is shorthand for <code>docker image pull</code>. 
