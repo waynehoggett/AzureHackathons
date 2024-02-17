@@ -6,6 +6,8 @@ Cloud Native DevOps Engineers define pipelines to deliver containerized applicat
 
 Container image creation is a crucial step in modern DevOps pipelines.
 
+In this challenge, you will create a simple Python Flask web app and containerize it.
+
 ## Objectives
 
 1.  **Create a folder for your containerized app and open the newly created folder in Visual Studio Code**
@@ -44,19 +46,30 @@ Container image creation is a crucial step in modern DevOps pipelines.
 
 3.  **Create the build instructions for your container image**
 
-    #### **`Dockerfile`**
+        A Dockerfile is a set of instructions used to build your container image.
 
-    ```Dockerfile
-    FROM python:3
+        #### **`Dockerfile`**
 
-    RUN pip install flask
+        ```Dockerfile
+        FROM python:3
 
-    COPY mycontainerapp.py mycontainerapp.py
+        RUN pip install flask
 
-    CMD [ "python", "mycontainerapp.py" ]
-    ```
+        COPY mycontainerapp.py mycontainerapp.py
 
-    ⚠️ A Dockerfile does not have a file extension or period character '.'.
+        CMD [ "python", "mycontainerapp.py" ]
+        ```
+
+    <details>
+        <summary>💡 Tips and Tricks</summary>
+        <ul>
+            <li>⚠️ A Dockerfile does not have a file extension or period character '.'.</li>
+            <li> The FROM instruction sets the base image for the container, we're using a base image that contains python.</li>
+            <li>The RUN instruction executes commands to build the container image, we're installing flask</li>
+            <li>The COPY instruction copies files to the container image. We're copying our flask app.</li>
+            <li>The CMD instruction specifies the default command that will be executed when you start a container from the container image.</li>
+        </ul>
+    </details>
 
 4.  **Build your container image**
 
@@ -71,7 +84,6 @@ Container image creation is a crucial step in modern DevOps pipelines.
     </ul>
     </ul>
     </details>
-    <br>
 
 5.  **Run your container**
 
@@ -87,7 +99,6 @@ Container image creation is a crucial step in modern DevOps pipelines.
     </ul>
     </ul>
     </details>
-    <br>
 
 6.  **View your running containerized app**
 
