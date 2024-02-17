@@ -151,7 +151,7 @@ resource windowsVMExtensions 'Microsoft.Compute/virtualMachines/extensions@2020-
     autoUpgradeMinorVersion: true
     settings: {
       fileUris: [
-        'https://gist.githubusercontent.com/waynehoggett/3160f95e5794d6dfa0121aecc977dac8/raw/83ebba183c6de6a209e5e24168a669522fe7c14e/Setup-Workstation.ps1'
+        'https://gist.githubusercontent.com/waynehoggett/3160f95e5794d6dfa0121aecc977dac8/raw/60c8b4b3e43e16871099ee19b750bb3e7eec014e/Setup-Workstation.ps1'
       ]
     }
     protectedSettings: {

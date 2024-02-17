@@ -33,8 +33,10 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-    <li>You can install apps on Windows 11 with winget using a single command<br/>
-    <code>winget install --id=Microsoft.VisualStudioCode --accept-source-agreements</code><br/><code>winget install --id=Docker.DockerDesktop --accept-source-agreements</code></a>
+    <li>Chocolatey has been preinstalled on your VM. You can install apps on Windows 11 with Chocolatey using a single command<br/>
+    Start a terminal, and run the below commands.
+    <code>choco install vscode</code><br/>
+    <code>choco install docker-desktop</code></a>
     </li>
     <li>⚠️ Make sure you log out and log back in after installing Docker Desktop</li>
     </ul>
