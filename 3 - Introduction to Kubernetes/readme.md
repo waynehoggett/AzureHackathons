@@ -20,4 +20,4 @@ In a series of 9 cloud-platform agnostic challenges you'll learn how to create a
 
 ## Get Started
 
-Go [Here >](/Challenges/1.1/readme.md) to start on the first challenge!
+Go [Here >](../Challenges/1.1/readme.md) to start on the first challenge!
