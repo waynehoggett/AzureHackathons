@@ -1,12 +1,12 @@
 param guid string = newGuid()
 param dnsPrefix string = 'hack${uniqueString(guid)}'
 param location string = resourceGroup().location
-param virtualNetworkName string = 'vnet-hackathon'
-param vmName string = 'MyHackVM'
+param virtualNetworkName string = 'vnet-${uniqueString(guid)}'
+param vmName string = 'vm${uniqueString(guid)}'
 param vmSize string = 'Standard_F4s_v2' //https://learn.microsoft.com/en-us/azure/virtual-machines/fsv2-series
 param vmUsername string = 'Hackathon'
 @secure()
-param vmPassword string = 'MyHackPassword#1' //This will be removed soon
+param vmPassword string = 'Password${uniqueString(guid)}'
 
 resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2019-11-01' = {
   name: 'nsg-snet-workstations'
