@@ -74,7 +74,7 @@ Docker hub is the default registry used Docker desktop.
     <summary>💡 Tips and Tricks</summary>
     <ul>
     <li>You can list running containers with the command: <code>docker container list</code></li>
-    </li>You can stop a running container with the command:<code>docker container stop <container id></code></li>
+    </li>You can stop a running container with the command:<code>docker container stop &lt;container id&gt; </code></li>
     </li>Or you can force remove the container with: <code>docker container remove --force <container id></code></li>
     </details>
 
