@@ -48,17 +48,17 @@ In this challenge, you will create a simple Python Flask web app and containeriz
 
         A Dockerfile is a set of instructions used to build your container image.
 
-        #### **`Dockerfile`**
+    #### **`Dockerfile`**
 
-        ```Dockerfile
-        FROM python:3
+    ```Dockerfile
+    FROM python:3
 
-        RUN pip install flask
+    RUN pip install flask
 
-        COPY mycontainerapp.py mycontainerapp.py
+    COPY mycontainerapp.py mycontainerapp.py
 
-        CMD [ "python", "mycontainerapp.py" ]
-        ```
+    CMD [ "python", "mycontainerapp.py" ]
+    ```
 
     <details>
         <summary>💡 Tips and Tricks</summary>
