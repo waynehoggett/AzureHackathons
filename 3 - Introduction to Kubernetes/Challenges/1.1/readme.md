@@ -35,8 +35,8 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
     <ul>
     <li>Make sure you install the software on the Windows VM - You might need to exit WSL.</li>
     <li>Chocolatey has been preinstalled on your VM. You can install apps on Windows 11 with Chocolatey. Start a terminal, and run the below commands:<br/>
-    <code>choco install vscode</code><br/>
-    <code>choco install docker-desktop</code>
+    <code>choco install vscode -y</code><br/>
+    <code>choco install docker-desktop -y</code>
     </li>
     <li>⚠️ Make sure you log out and log back in after installing Docker Desktop</li>
     </ul>
