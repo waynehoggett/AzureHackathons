@@ -38,10 +38,16 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
     <code>choco install vscode -y</code><br/>
     <code>choco install docker-desktop -y</code>
     </li>
-    <li>⚠️ Make sure you log out and log back in after installing Docker Desktop</li>
     </ul>
     </details>
     </ul>
+
+4.  **Perform Docker Desktop initial setup**
+
+    - **Important**: Log off and back on again
+    - You can _continue without signing in_ to Docker Desktop
+    - You can also skip any surveys
+    - Once Docker Desktop is running, you can close or minimize the window it and continue
 
 ## Success Criteria
 
