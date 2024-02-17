@@ -34,7 +34,6 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
     <summary>💡 Tips and Tricks</summary>
     <ul>
     <li>You can install apps on Windows 11 with winget using a single command<br/>
-    <script src="https://gist.github.com/waynehoggett/cb789344586eaf4f8f78f41ebf8edf9d.js"></script>
     <code>winget install --id=Microsoft.VisualStudioCode --accept-source-agreements</code><br/><code>winget install --id=Docker.DockerDesktop --accept-source-agreements</code></a>
     </li>
     <li>⚠️ Make sure you log out and log back in after installing Docker Desktop</li>
