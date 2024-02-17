@@ -10,7 +10,9 @@ A node is a worker machine in Kubernetes. Your nodes can run either workloads (w
 
 Enabling Kubernetes with Docker Desktop, makes your VM both a Control Plane and (worker) Node.
 
-You administer your Kubernetes cluster using the command-line tool, **kubectl**.
+Kubernetes provides the **kubectl** command line tool for communicating with a Kubernetes cluster's control plane, using the Kubernetes API.
+
+You administer your Kubernetes cluster using the **kubectl** command-line tool.
 
 ## Objectives
 

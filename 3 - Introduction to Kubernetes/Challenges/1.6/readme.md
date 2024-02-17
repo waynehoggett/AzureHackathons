@@ -2,11 +2,9 @@
 
 ## Overview
 
-All containers in Kubernetes are scheduled as pods, which are groups of co-located containers that share some resources.
+All containers in Kubernetes are scheduled as **Pods**, which represent a set of running containers on your cluster.
 
-All Kubernetes objects can and should be described in manifests called Kubernetes YAML files. These YAML files describe all the components and configurations of your Kubernetes app, and can be used to easily create and destroy your app in any Kubernetes environment.
-
-Kubernetes provides the `kubectl` command line tool for communicating with a Kubernetes cluster's control plane, using the Kubernetes API.
+All Kubernetes objects can and should be described in **Manifests**. A manifest is a specification of a Kubernetes API object in JSON or YAML format. YAML is most common and recommended. These files describe all the components and configurations of your Kubernetes app, and can be used to easily create and destroy your app in any Kubernetes environment.
 
 ## Objectives
 
@@ -23,7 +21,6 @@ Kubernetes provides the `kubectl` command line tool for communicating with a Kub
       <li>Refer to <a href="pod.yaml">pod.yaml</a> for a sample manifest</li>
       </ul>
       </details>
-      <br>
 
    b. **Deploy your pod using kubectl**
 
@@ -34,7 +31,6 @@ Kubernetes provides the `kubectl` command line tool for communicating with a Kub
             <li>For example: <code>kubectl apply -f pod.yaml</code></li>
          </ul>
       </details>
-      <br>
 
    c. **Get a list of pods using kubectl**
 
@@ -45,7 +41,6 @@ Kubernetes provides the `kubectl` command line tool for communicating with a Kub
             <li>For example: <code>kubectl get pods</code></li>
          </ul>
       </details>
-      <br>
 
 1. **Tear down your pod**
 
@@ -56,7 +51,6 @@ Kubernetes provides the `kubectl` command line tool for communicating with a Kub
          <li>For example: <code>kubectl delete -f pod.yaml</code></li>
       </ul>
    </details>
-   <br>
 
 ## Success Criteria
 
