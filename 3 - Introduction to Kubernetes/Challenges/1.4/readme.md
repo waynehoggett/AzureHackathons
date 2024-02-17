@@ -8,8 +8,8 @@ As part of application development and testing as a Cloud Native DevOps Engineer
 
 1.  **Update your container app, by editing the text returned on line `10`**
 
-- Edit the _mycontainerapp.py_ file and change the text inside the quotes on line 10. For example: "Welcome to Wayne's container app!"
-- Make sure you save the file!
+    - Edit the _mycontainerapp.py_ file and change the text inside the quotes on line 10. For example: "Welcome to Wayne's container app!"
+    - Make sure you save the file!
 
 2.  **Build a new version of your container image**
 
