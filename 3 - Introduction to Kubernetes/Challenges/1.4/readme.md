@@ -8,6 +8,9 @@ As part of application development and testing as a Cloud Native DevOps Engineer
 
 1.  **Update your container app, by editing the text returned on line `10`**
 
+- Edit the _mycontainerapp.py_ file and change the text inside the quotes on line 10. For example: "Welcome to Wayne's container app!"
+- Make sure you save the file!
+
 2.  **Build a new version of your container image**
 
     <details>
@@ -17,7 +20,6 @@ As part of application development and testing as a Cloud Native DevOps Engineer
             <li>In this example <code>v2</code> is the image version.</li>
         </ul>
     </details>
-    <br>
 
 3.  **Run the new version of your container**
 
@@ -29,7 +31,6 @@ As part of application development and testing as a Cloud Native DevOps Engineer
             <li><a href="https://docs.docker.com/engine/reference/commandline/run/">docker run</a></li>
         </ul>
     </details>
-    <br>
 
 4.  **View your running containerized app**
 
@@ -39,7 +40,6 @@ As part of application development and testing as a Cloud Native DevOps Engineer
             <li>If you exposed port 8080 on the container host, you can access your app on <code>http://localhost:8080</code> in your browser</li>
         </ul>
     </details>
-    <br>
 
 5.  **Stop your running container and remove it**
 
@@ -47,10 +47,9 @@ As part of application development and testing as a Cloud Native DevOps Engineer
     <summary>💡 Tips and Tricks</summary>
     <ul>
     <li>You can list running containers with the command: <code>docker container list</code></li>
-    </li>You can stop a running container with the command:<code>docker container stop <container id></code></li>
-    </li>Or you can force remove the container with: <code>docker container remove --force <container id></code></li>
+    </li>You can stop a running container with the command:<code>docker container stop &lt;container id&gt;</code></li>
+    </li>Or you can force remove the container with: <code>docker container remove --force &lt;container id&gt;</code></li>
     </details>
-    <br>
 
 <details>
 <summary>📚 Additional Reading (Optional)</summary>

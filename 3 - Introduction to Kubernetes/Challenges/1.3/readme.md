@@ -46,7 +46,7 @@ In this challenge, you will create a simple Python Flask web app and containeriz
 
 3.  **Create the build instructions for your container image**
 
-        A Dockerfile is a set of instructions used to build your container image.
+    A Dockerfile is a set of instructions used to build your container image.
 
     #### **`Dockerfile`**
 
@@ -76,11 +76,12 @@ In this challenge, you will create a simple Python Flask web app and containeriz
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-    <li>You can change into the directory of your app using the command: <code>cd .\mycontainerapp\</code></li>
+    <li>You can star a terminal in Visual Studio Code to run commands, or you can change into the directory of your app using the command (from the parent directory): <code>cd .\mycontainerapp\</code></li>
     <li>You can build your container image with the command: <code>docker build -t mycontainerapp .</code></li>
+    <li>If you receive an error, make sure Docker Desktop is running.</li>
     <ul>
     <li>In the above -t is the tag parameter, it is used to name specify the name and version of your container image. If you don't specify a version, latest is used, to the value <code>mycontainerapp</code> is equivalent to <code>mycontainerapp:latest</code>.</li>
-    <li>The period "." at the end of the command indicates the working directory. The period indicates to use the current directory.<code></code></li>
+    <li>The period "." at the end of the command indicates the working directory. The period indicates to use the current directory.</li>
     </ul>
     </ul>
     </details>
@@ -102,7 +103,18 @@ In this challenge, you will create a simple Python Flask web app and containeriz
 
 6.  **View your running containerized app**
 
-    If you exposed your container app as port 8080: Open http://localhost:8080 in your browser to see the app running.
+    - If you exposed your container app as port 8080: Open http://localhost:8080 in your browser to see the app running.
+    - If you see the old container image webpage, force refresh the web page `CTRL+F5`
+
+7.  **Stop your running container and remove it**
+
+    <details>
+    <summary>💡 Tips and Tricks</summary>
+    <ul>
+    <li>You can list running containers with the command: <code>docker container list</code></li>
+    </li>You can stop a running container with the command:<code>docker container stop &lt;container id&gt;</code></li>
+    </li>Or you can force remove the container with: <code>docker container remove --force &lt;container id&gt;</code></li>
+    </details>
 
 ## Success Criteria
 
