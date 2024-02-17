@@ -2,7 +2,9 @@
 
 ## Overview
 
-Pods are the smallest deployable units of computing that you can create and manage in Kubernetes Instead of deploying single pods, you will most likely create a deployment. A deployment provides declarative updates for Pods and ReplicaSets. A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time.
+Pods are the smallest deployable units of computing that you can create and manage in Kubernetes. Instead of deploying single pods, you will most likely create deployments. A **deployment** provides declarative updates for **Pods** and **ReplicaSets**. A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time.
+
+## Objectives
 
 1.  **Define a deployment**
 
@@ -13,7 +15,6 @@ Pods are the smallest deployable units of computing that you can create and mana
     <li>Refer to <a href="deployment.yaml">deployment.yaml</a> for a sample deployment manifest</li>
     </ul>
     </details>
-    <br>
 
 2.  Deploy your containerized application using your deployment
 
@@ -24,7 +25,6 @@ Pods are the smallest deployable units of computing that you can create and mana
             <li>For example: <code>kubectl apply -f deployment.yaml</code></li>
          </ul>
       </details>
-      <br>
 
 3.  Get a list of your deployments using kublectl
 
@@ -35,7 +35,6 @@ Pods are the smallest deployable units of computing that you can create and mana
             <li>For example: <code>kubectl get deployments</code></li>
          </ul>
       </details>
-      <br>
 
 ## Success Criteria
 

@@ -10,7 +10,11 @@ All Kubernetes objects can and should be described in **Manifests**. A manifest 
 
 1. **Install the Kubernetes extension in Visual Studio Code**
 
-   - Install using the Extensions panel, or run `code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools`
+   - Install using the Extensions panel, or in the terminal, run:
+
+   ```
+   code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+   ```
 
 1. **Deploy a pod consisting of just one container running the container image created earlier:**
 
