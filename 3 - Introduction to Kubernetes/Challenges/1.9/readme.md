@@ -11,7 +11,7 @@ When load on your application grows or shrinks you can scale your application.
 </ul>
 </details>
 
-1. **Tear down your deployment when you're done**
+2. **Tear down your deployment when you're done**
 
 <details>
 <summary>💡 Tips and Tricks</summary>
