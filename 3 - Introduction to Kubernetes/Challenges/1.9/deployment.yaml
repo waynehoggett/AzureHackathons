@@ -4,7 +4,7 @@ metadata:
    name: myapp-deployment
    namespace: default
 spec:
-   replicas: 1
+   replicas: 3
    selector:
       matchLabels:
          mycontainerapp: web

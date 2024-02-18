@@ -2,7 +2,7 @@
 
 When load on your application grows or shrinks you can scale your application.
 
-1. Increase the number of replicas from 1 to 3
+1. **Increase the number of replicas from 1 to 3**
 
 <details>
 <summary>💡 Tips and Tricks</summary>
@@ -11,7 +11,7 @@ When load on your application grows or shrinks you can scale your application.
 </ul>
 </details>
 
-1. Tear down your deployment when you're done:
+1. **Tear down your deployment when you're done**
 
 <details>
 <summary>💡 Tips and Tricks</summary>
@@ -22,7 +22,7 @@ When load on your application grows or shrinks you can scale your application.
 
 ## Next Steps
 
-### Learn More
+You can continue you learning journey with free resources:
 
 - [Play with Kubernetes](https://labs.play-with-k8s.com/)
 - [Play with Kubernetes classroom](https://training.play-with-kubernetes.com/)
