@@ -1,4 +1,4 @@
-# Challenge 1.8 - Scale Your App
+# Challenge 1.9 - Scale Your App
 
 When load on your application grows or shrinks you can scale your application.
 
