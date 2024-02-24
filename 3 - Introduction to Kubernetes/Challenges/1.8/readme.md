@@ -32,17 +32,7 @@ The **NodePort** service type exposes a Service on each Node's IP at a static po
          </ul>
       </details>
 
-3.  **Get a list of services with kubectl**
-
-      <details>
-         <summary>💡 Tips and Tricks</summary>
-         <ul>
-           <li>You can list your Kubernetes services with <a href="https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources">Viewing and finding resources</a></li>
-           <li>For example: <code>kubectl get services</code></li>
-         </ul>
-      </details>
-
-4.  **View your app using the service**
+3.  **View your app using the service**
 
     <details>
     <summary>💡 Tips and Tricks</summary>
