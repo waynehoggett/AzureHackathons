@@ -47,7 +47,7 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
     - **Important**: Log off and back on again
     - You can _continue without signing in_ to Docker Desktop
     - You can also skip any surveys
-    - Once Docker Desktop is running, you can close or minimize the window it and continue
+    - Once Docker Desktop is running, you can close or minimize the window and continue
 
 ## Success Criteria
 
