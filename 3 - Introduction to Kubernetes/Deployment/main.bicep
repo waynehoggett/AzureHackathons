@@ -3,10 +3,10 @@ param dnsPrefix string = 'hack${uniqueString(guid)}'
 param location string = resourceGroup().location
 param virtualNetworkName string = 'vnet-${uniqueString(guid)}'
 param vmName string = 'vm${uniqueString(guid)}'
-param vmSize string = 'Standard_F4s_v2' //https://learn.microsoft.com/en-us/azure/virtual-machines/fsv2-series
+param vmSize string = 'Standard_F4s_v2' // Alternate sizes: Standard_D2_v3, Standard_D2_v4
 param vmUsername string = 'Hackathon'
 @secure()
-param vmPassword string = 'Password${uniqueString(guid)}'
+param vmPassword string = 'Password!${uniqueString(guid)}'
 
 resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2019-11-01' = {
   name: 'nsg-snet-workstations'
@@ -68,11 +68,11 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
   }
 }
 
-resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2019-11-01' = {
+resource publicIP 'Microsoft.Network/publicIPAddresses@2019-11-01' = {
   name: 'pip1-${vmName}'
   location: location
   properties: {
-    publicIPAllocationMethod: 'Dynamic'
+    publicIPAllocationMethod: 'Static'
     dnsSettings: {
       domainNameLabel: dnsPrefix
     }
@@ -92,7 +92,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
             id: virtualNetwork.properties.subnets[0].id
           }
           publicIPAddress: {
-            id: publicIPAddress.id
+            id: publicIP.id
           }
         }
       }
@@ -151,7 +151,7 @@ resource windowsVMExtensions 'Microsoft.Compute/virtualMachines/extensions@2020-
     autoUpgradeMinorVersion: true
     settings: {
       fileUris: [
-        'https://gist.githubusercontent.com/waynehoggett/3160f95e5794d6dfa0121aecc977dac8/raw/60c8b4b3e43e16871099ee19b750bb3e7eec014e/Setup-Workstation.ps1'
+        'https://gist.githubusercontent.com/waynehoggett/3160f95e5794d6dfa0121aecc977dac8/raw/2fdab99e4b2de15805390ee8a246ee451bdb3767/Setup-Workstation.ps1'
       ]
     }
     protectedSettings: {
@@ -160,16 +160,7 @@ resource windowsVMExtensions 'Microsoft.Compute/virtualMachines/extensions@2020-
   }
 }
 
-output properties object = {
-  username: vmUsername
-  password: vmPassword
-  vmIPAddress: networkInterface.properties.ipConfigurations[0].properties.publicIPAddress //publicIPAddress.properties.ipAddress
-  vmFQDN: publicIPAddress.properties.dnsSettings.fqdn
-}
-
-output outputLabels object = {
-  username: 'Virtual Machine Username'
-  password: 'Virtual Machine Password'
-  vmIPAddress: 'Virutal Machine IP Address'
-  vmFQDN: 'Virtual Machine FQDN'
-}
+output IPAddress string = publicIP.properties.ipAddress
+output DNSName string = publicIP.properties.dnsSettings.fqdn
+output username string = vmUsername
+output password string = vmPassword

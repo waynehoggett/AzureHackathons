@@ -43,6 +43,7 @@ You administer your Kubernetes cluster using the **kubectl** command-line tool.
     <li>Use <code>kubectl --help</code> to get a list of commands</li>
     <li>You can see that <code>kubectl get</code> will display one or many resources</li>
     <li>Use <code>kubectl api-resources</code> to get a complete list of supported resources</li>
+    <li>Use <code>kubectl explain &lt;resource type&gt;</code> to get an explanation of a resource type</li>
     <li>So you can use <code>kubectl get nodes</code> to get a list of nodes. Your cluster has a single node.</li>
     </ul>
     </details>
