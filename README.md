@@ -16,6 +16,6 @@ In this hackathon, you will deploy some Azure resources using Bicep and configur
 
 The goal of this challenge is to introduce you to GitHub and some really common DevOps practices.
 
-### [In Development - GitOps with Azure DevOps and GitHub](/FUTURE%20-%20GitOps%20with%20Azure%20DevOps%20and%20GitHub/readme.md)
+### [3- Introduction to Kubernetes](./3%20-%20Introduction%20to%20Kubernetes/readme.md)
 
-In this hackathon, you will use Azure DevOps or GitHub to deploy and manage Azure Infrastructure.
+The goal of this challenge is to introduce you some common concepts for Docker and Kubernetes.
