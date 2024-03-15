@@ -10,7 +10,7 @@ The **NodePort** service type exposes a Service on each Node's IP at a static po
 
 1.  **Update your deployment with a service**
 
-    Make your application accessible from outside the cluster by creating a NodePort Service.
+    Make your application accessible from outside the cluster by creating a NodePort Service and deploying it.
 
     <details>
     <summary>💡 Tips and Tricks</summary>
@@ -18,7 +18,8 @@ The **NodePort** service type exposes a Service on each Node's IP at a static po
     <li><a href="https://kubernetes.io/docs/concepts/services-networking/service/">Services</a></li>
     <li>Refer to <a href="deployment.yaml">deployment.yaml</a> for a sample deployment manifest</li>
     <li>In this manifest, we have two objects, separated by the <code>---:</code></li>
-    <li>A NodePort service, which will route traffic from port 30001 on your host to port 3000 inside the pods it routes to, allowing you to reach your Todo app from the network.</li>
+    <li>A NodePort service, which will route traffic from port 30001 on your host to port 3000 inside the pods it routes to, allowing you to reach your app from the network.</li>
+    <li>Deploy with: <code>kubectl apply -f deployment.yaml</code></li>
     </ul>
     </details>
 

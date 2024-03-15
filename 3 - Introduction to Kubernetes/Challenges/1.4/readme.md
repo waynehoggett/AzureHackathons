@@ -16,7 +16,7 @@ As part of application development and testing as a Cloud Native DevOps Engineer
     <details>
         <summary>💡 Tips and Tricks</summary>
         <ul>
-            <li>You can add a new container image version by specifying a new version tag: <code>docker build -t mycontainerapp:v2 .</code></li>
+            <li>You can add a new container image version by specifying a new version tag: <code>docker build -t mycontainerapp:v2 .</code> &lt;- Dont miss that 'dot' on the end!</li>
             <li>In this example <code>v2</code> is the image version.</li>
         </ul>
     </details>

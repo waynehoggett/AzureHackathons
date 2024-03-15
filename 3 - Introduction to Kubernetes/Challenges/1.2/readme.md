@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Containers** are a building blocks of modern applications. A container _contains_ everything an application needs to run bundled into a single container image.
+**Containers** are a building blocks of modern applications. A container _contains_ everything an application needs to run, bundled into a single container image.
 
 **Container images** are merely a container in an offline state. Container images are commonly pushed to and stored in a container **registry**.
 
@@ -10,7 +10,7 @@ Container images are grouped in a registry into one or more **repositories**. Th
 
 In this challenge you will pull an existing container image from the Docker Hub container public registry and run it locally.
 
-Docker hub is the default registry used Docker desktop.
+Docker hub is the default registry used with Docker desktop.
 
 ## Objectives
 

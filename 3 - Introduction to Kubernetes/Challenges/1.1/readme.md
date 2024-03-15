@@ -4,7 +4,7 @@
 
 A smart Cloud Native DevOps or Platform Engineer knows what tools he needs, how to install them and how to use them. Get started with this hackathon by preparing your toolkit.
 
-Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable cloud-native cloud development on Windows.
+Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable cloud-native development on Windows.
 
 ## Objectives
 
@@ -24,8 +24,9 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
 
     - Use the same (all lowercase) username and password for WSL/Ubuntu as you are using for Windows
 
-3.  **Install required software**
+3.  **Install required software on Windows**
 
+    - **Important:** Make sure you install the software on the Windows VM - You might need to exit WSL.
     - Visual Studio Code
     - Docker Desktop
     <br />
@@ -33,7 +34,6 @@ Windows Subsystem for Linux (WSL), Visual Studio Code, and Docker Desktop enable
     <details>
     <summary>💡 Tips and Tricks</summary>
     <ul>
-    <li>Make sure you install the software on the Windows VM - You might need to exit WSL.</li>
     <li>Chocolatey has been preinstalled on your VM. You can install apps on Windows 11 with Chocolatey. Start a terminal, and run the below commands:<br/>
     <code>choco install vscode --version=1.86.1 -y</code><br/>
     <code>choco install docker-desktop -y</code>
