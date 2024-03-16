@@ -5,7 +5,7 @@ param virtualNetworkName string = 'vnet-${uniqueString(guid)}'
 param vmName string = 'vm${uniqueString(guid)}'
 param vmSize string = 'Standard_F4s_v2' // Alternate sizes: Standard_D2_v3, Standard_D2_v4
 param vmUsername string = 'Hackathon'
-@secure()
+#disable-next-line secure-secrets-in-params
 param vmPassword string = 'Password!${uniqueString(guid)}'
 
 resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2019-11-01' = {
@@ -46,6 +46,7 @@ resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2019-11-0
 }
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
+  #disable-next-line use-stable-resource-identifiers
   name: virtualNetworkName
   location: location
   properties: {
@@ -69,6 +70,7 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
 }
 
 resource publicIP 'Microsoft.Network/publicIPAddresses@2019-11-01' = {
+  #disable-next-line use-stable-resource-identifiers
   name: 'pip1-${vmName}'
   location: location
   properties: {
@@ -80,6 +82,7 @@ resource publicIP 'Microsoft.Network/publicIPAddresses@2019-11-01' = {
 }
 
 resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
+  #disable-next-line use-stable-resource-identifiers
   name: 'nic1-${vmName}'
   location: location
   properties: {
@@ -101,6 +104,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
 }
 
 resource virtualMachine 'Microsoft.Compute/virtualMachines@2020-12-01' = {
+  #disable-next-line use-stable-resource-identifiers
   name: vmName
   location: location
   properties: {
@@ -142,6 +146,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2020-12-01' = {
 
 resource windowsVMExtensions 'Microsoft.Compute/virtualMachines/extensions@2020-12-01' = {
   parent: virtualMachine
+  #disable-next-line use-stable-resource-identifiers
   name: 'cse-${vmName}'
   location: location
   properties: {
@@ -163,4 +168,5 @@ resource windowsVMExtensions 'Microsoft.Compute/virtualMachines/extensions@2020-
 output IPAddress string = publicIP.properties.ipAddress
 output DNSName string = publicIP.properties.dnsSettings.fqdn
 output username string = vmUsername
+#disable-next-line outputs-should-not-contain-secrets
 output password string = vmPassword

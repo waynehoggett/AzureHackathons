@@ -31,6 +31,7 @@ try {
     Write-Output "Public IP Address: $($Deployment.Outputs.ipAddress.Value)" | Out-File -Path ./Endpoints.txt -Append
     Write-Output "VM Username: $($Deployment.Outputs.username.Value)" | Out-File -Path ./Endpoints.txt -Append
     Write-Output "VM Password: $($Deployment.Outputs.password.Value)" | Out-File -Path ./Endpoints.txt -Append
+    Write-Output "Resource Group Name: $($RG.ResourceGroupName)" | Out-File -Path ./Endpoints.txt -Append
     Write-Output "--------------------------------------" | Out-File -Path ./Endpoints.txt -Append
     # Save the RG to the list of RGs if successful
     $RG.ResourceGroupName | Out-File -Path ./RGs.txt -Append
